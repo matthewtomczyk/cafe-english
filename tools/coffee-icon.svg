@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1254" height="1254" viewBox="0 0 100 100">
+  <rect x="1.5" y="1.5" width="97" height="97" rx="11.5" fill="#F7CA1A"/>
+  <g fill="none" stroke="#232D62" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- steam -->
+    <path d="M41 30 c -5 -4 5 -7 0 -11"/>
+    <path d="M52.5 30 c -5 -4 5 -7 0 -11"/>
+    <!-- cup -->
+    <path d="M29 41 L59 41 L54.5 63.5 Q41 70.5 33.5 63.5 Z"/>
+    <!-- handle -->
+    <path d="M59 46.5 C70.5 46.5 71 60.5 58.5 58.5"/>
+    <!-- saucer -->
+    <path d="M23 75 H61"/>
+  </g>
+</svg>

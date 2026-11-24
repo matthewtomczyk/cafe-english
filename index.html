@@ -1,0 +1,2640 @@
+<!doctype html><html lang="en"><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><title>Vocational English for Catering</title><link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png"><link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:ital,wght@0,400;0,500;0,600;1,400&family=Patrick+Hand&display=swap"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<style>
+  :root{
+    --paper:#FFFFFF;
+    --panel:#F2F5F7;
+    --bubble:#E9EFF3;
+    --ink:#12242D;
+    --ink-soft:#41606F;
+    --ink-faint:#78919E;
+    --line:#DCE6EB;
+    --line-strong:#BFD0D9;
+    --heading:#142B36;
+--accent: #1B3644;
+--accent-fill: #142B36;
+--accent-mid: #2F5A70;
+--accent-soft: #1B36440f;
+--accent-soft2: #1B36441a;
+    --yellow:#F0C929;
+    --good:#2C7A4B;
+    --good-bg:#2C7A4B1a;
+    --bad:#B3661A;
+    --bad-bg:#B3661A1a;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#101B21;
+      --panel:#17262E;
+      --bubble:#1D313B;
+      --ink:#E7EFF3;
+      --ink-soft:#A7BFCC;
+      --ink-faint:#7895A3;
+      --line:#2B424E;
+      --line-strong:#3B5A68;
+      --heading:#A9C8D8;
+--accent: #8FB8CC;
+--accent-fill: #0D181E;
+--accent-mid: #6E9CB4;
+--accent-soft: #8FB8CC14;
+--accent-soft2: #8FB8CC26;
+      --yellow:#F0C929;
+      --good:#5FCB8C;
+      --good-bg:#5FCB8C1f;
+      --bad:#E0995A;
+      --bad-bg:#E0995A1f;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#101B21;
+    --panel:#17262E;
+    --bubble:#1D313B;
+    --ink:#E7EFF3;
+    --ink-soft:#A7BFCC;
+    --ink-faint:#7895A3;
+    --line:#2B424E;
+    --line-strong:#3B5A68;
+    --heading:#A9C8D8;
+--accent: #8FB8CC;
+--accent-fill: #0D181E;
+--accent-mid: #6E9CB4;
+--accent-soft: #8FB8CC14;
+--accent-soft2: #8FB8CC26;
+    --yellow:#F0C929;
+    --good:#5FCB8C;
+    --good-bg:#5FCB8C1f;
+    --bad:#E0995A;
+    --bad-bg:#E0995A1f;
+    color-scheme: dark;
+  }
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Inter", sans-serif;
+    font-size:16px;
+    line-height:1.55;
+  }
+  .wrap{ max-width:920px; margin:0 auto; padding:0 20px; }
+  h1,h2,h3{ font-family:"Poppins", sans-serif; text-wrap:balance; }
+  a{ color:var(--accent-mid); }
+  .kicker{
+    font-family:"Inter", sans-serif;
+    font-size:13px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    opacity:.75;
+    margin:0 0 4px;
+  }
+
+  /* Top masthead */
+  .top-masthead{ background:var(--accent-fill); color:#fff; padding:34px 20px 32px; }
+  .top-masthead-inner{ max-width:920px; margin:0 auto; }
+  .top-masthead h1{ margin:0; font-size:clamp(1.6rem,4.5vw,2.2rem); font-weight:700; }
+  .top-masthead .progress-note{ margin:10px 0 0; font-size:.88rem; opacity:.85; }
+
+  /* Contents */
+  .contents{ margin:36px 0 44px; }
+  .contents-title{ margin:0 0 16px; font-size:1.1rem; text-transform:uppercase; letter-spacing:.06em; color:var(--ink-faint); font-weight:600; }
+  .contents-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:12px; }
+  .contents-card{
+    display:flex; gap:12px; align-items:flex-start;
+    padding:13px 15px;
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:10px;
+    text-decoration:none;
+    color:inherit;
+  }
+  .contents-card:hover{ border-color:var(--accent-mid); }
+  .contents-num{
+    flex:0 0 auto; width:28px; height:28px;
+    background:var(--yellow); color:#26260a;
+    font-family:"Poppins",sans-serif; font-weight:700; font-size:13px;
+    display:flex; align-items:center; justify-content:center;
+    border-radius:6px;
+  }
+  .contents-text{ font-family:"Poppins",sans-serif; color:var(--ink); font-size:.92rem; font-weight:600; line-height:1.35; }
+
+  /* Topic pager */
+  .topic-pager{ display:flex; align-items:center; justify-content:center; gap:10px; margin:52px 0 22px; flex-wrap:wrap; }
+  .topic-pager a{
+    display:inline-flex; align-items:center; gap:6px;
+    padding:7px 14px; border-radius:20px;
+    border:1.5px solid var(--line-strong);
+    font-family:"Poppins",sans-serif; font-weight:600; font-size:.82rem;
+    color:var(--ink-soft); text-decoration:none;
+  }
+  .topic-pager a:hover{ border-color:var(--accent-mid); color:var(--accent-mid); }
+  .topic-pager .count{ font-family:"IBM Plex Mono",monospace; font-size:.78rem; color:var(--ink-faint); }
+
+  /* Topic hero (full-bleed) */
+  .unit-hero{ background:var(--accent-fill); color:#fff; padding:28px 0 26px; margin:0; }
+  .unit-hero-inner{ max-width:920px; margin:0 auto; padding:0 20px; display:flex; align-items:center; gap:18px; }
+  .unit-badge{
+    flex:0 0 auto; width:52px; height:52px;
+    background:var(--yellow); color:#26260a;
+    font-family:"Poppins", sans-serif; font-weight:700; font-size:24px;
+    display:flex; align-items:center; justify-content:center;
+    border-radius:8px;
+  }
+  .unit-hero h1{ margin:0; font-size:clamp(1.5rem,4.5vw,2.1rem); font-weight:700; }
+  .unit-hero .kicker{ opacity:.75; }
+
+  .lede{ font-size:1.02rem; color:var(--ink-soft); }
+  .lede strong{ color:var(--ink); font-weight:600; }
+
+  .term-list{ list-style:none; margin:18px 0; padding:0; display:flex; flex-direction:column; gap:10px; }
+  .term-list li{
+    background:var(--panel); border:1px solid var(--line); border-left:4px solid var(--accent-mid);
+    border-radius:6px; padding:10px 14px;
+  }
+
+  .notes-box{
+    margin-top:18px; padding:14px 18px;
+    background:var(--accent-soft); border:1px solid var(--accent-soft2);
+    border-radius:8px; font-size:.93rem; color:var(--ink-soft);
+  }
+  .notes-box b{ color:var(--ink); }
+  .notes-box div + div{ margin-top:6px; }
+
+  .mistake-pair{ display:flex; flex-wrap:wrap; gap:20px; margin:16px 0; }
+  .mistake-col{ flex:1 1 260px; }
+  .mistake-col h5{ margin:0 0 8px; font-size:.76rem; text-transform:uppercase; letter-spacing:.05em; color:var(--ink-faint); font-family:"Poppins",sans-serif; }
+  .mistake-col div{ margin-bottom:6px; font-size:.94rem; }
+  .mistake-col.wrong div::before{ content:"\2717  "; color:var(--bad); font-weight:700; }
+  .mistake-col.right div::before{ content:"\2713  "; color:var(--good); font-weight:700; }
+
+  /* Speech bubbles */
+  .bubble-field{ display:flex; flex-wrap:wrap; gap:16px; margin:18px 0 6px; }
+  .bubble{
+    background:var(--bubble); border:1px solid var(--line); border-radius:14px;
+    padding:16px 18px; flex:1 1 260px; max-width:420px;
+    font-family:"Patrick Hand", cursive; font-size:1.15rem; line-height:1.35;
+    color:var(--ink); position:relative;
+  }
+  .bubble b{ color:var(--accent-mid); }
+  .bubble::after{
+    content:""; position:absolute; width:16px; height:16px; background:var(--bubble);
+    border-left:1px solid var(--line); border-bottom:1px solid var(--line);
+    bottom:-8px; left:28px; transform:rotate(-45deg);
+  }
+  .bubble:nth-child(even)::after{ left:auto; right:28px; }
+  .bubble.exercise-bubble{ font-family:"Inter",sans-serif; font-size:.98rem; line-height:1.65; max-width:460px; }
+  .bubble.exercise-bubble .blank{ margin:0 2px; }
+
+  /* Meme / illustration placeholder */
+  .meme-placeholder{
+    margin:18px 0; padding:22px;
+    border:1.5px dashed var(--line-strong);
+    border-radius:10px;
+    background:var(--panel);
+    display:flex; flex-direction:column; align-items:center; gap:8px;
+    text-align:center;
+  }
+  .meme-placeholder .icon{ font-size:1.6rem; }
+  .meme-placeholder .caption{ font-size:.86rem; color:var(--ink-faint); font-style:italic; max-width:480px; }
+
+  /* Original illustrations (plain – no bubble) */
+  .illustration-card{
+    margin:24px 0;
+  }
+  .illustration-card svg{ width:100%; height:auto; display:block; color:var(--ink-soft); }
+  .illustration-card img{ width:100%; height:auto; display:block; border-radius:6px; }
+  .illustration-card figcaption{ margin-top:10px; font-size:.82rem; color:var(--ink-faint); font-style:italic; text-align:center; }
+
+  /* Reading text (plain – no bubble) */
+  .reading-card{
+    margin:28px 0;
+  }
+  .reading-card h4{
+    margin:0 0 14px; font-family:"Poppins",sans-serif;
+    font-size:1.18rem; color:var(--heading); font-weight:700;
+    padding-bottom:7px; border-bottom:2px solid var(--accent-mid);
+  }
+  .reading-card .reading-text{
+    font-size:1.02rem; line-height:1.8; color:var(--ink);
+  }
+  .reading-card .reading-text strong{
+    color:var(--accent-mid); font-weight:700;
+  }
+
+  /* Vocabulary bubble (definitions & word lists) */
+  .def-box{
+    margin:22px 0; padding:16px 20px;
+    background:var(--bubble);
+    border:1px solid var(--line);
+    border-radius:14px;
+  }
+  .def-box > p:first-child{ margin-top:0; }
+  .def-box > p:last-child{ margin-bottom:0; }
+  .def-box strong{ color:var(--accent-mid); }
+
+  /* "Over to you" reflection box */
+  .over-to-you{
+    margin:46px 0 8px;
+    background:var(--accent-fill);
+    color:#fff;
+    border-radius:12px;
+    padding:26px 26px 24px;
+  }
+  .over-to-you-head{ display:flex; align-items:center; gap:12px; margin-bottom:10px; }
+  .over-to-you h3{ margin:0; font-size:1.2rem; font-style:italic; }
+  .over-to-you p{ margin:0 0 14px; opacity:.92; }
+  .over-to-you a{ color:var(--yellow); text-decoration:underline; }
+  .over-to-you-video{
+    position:relative; width:100%; aspect-ratio:16/9;
+    margin:0 0 18px; overflow:hidden; border-radius:10px;
+  }
+  .over-to-you-video iframe{
+    position:absolute; top:0; left:0; width:100%; height:100%;
+    border:0; border-radius:10px;
+  }
+  .over-to-you textarea{
+    width:100%;
+    min-height:90px;
+    border-radius:8px;
+    border:1px solid rgba(255,255,255,.3);
+    background:rgba(255,255,255,.08);
+    color:#fff;
+    font-family:"Inter",sans-serif;
+    font-size:.95rem;
+    padding:12px;
+    resize:vertical;
+  }
+  .over-to-you textarea::placeholder{ color:rgba(255,255,255,.55); }
+  .over-to-you textarea:focus{ outline:2px solid var(--yellow); outline-offset:1px; }
+  .over-to-you .save-note{ font-size:.78rem; opacity:.7; margin-top:8px; transition:opacity .25s; }
+  .over-to-you .save-note.flash{ opacity:1; color:var(--yellow); }
+
+  /* Exercises */
+  .exercise{ margin-top:28px; padding:22px 22px 20px; background:var(--panel); border:1px solid var(--line); border-radius:10px; }
+  .exercise-num{
+    display:inline-block; font-family:"Poppins",sans-serif; font-weight:700; color:#fff;
+    background:var(--accent-fill); font-size:.85rem; padding:3px 9px; border-radius:5px;
+    margin-right:10px; vertical-align:middle;
+  }
+  .exercise h3{ margin:0 0 6px; font-size:1.1rem; display:flex; align-items:center; }
+  .exercise .instructions{ color:var(--ink-soft); font-size:.94rem; margin:0 0 16px; }
+
+  .cloze-list{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:12px; }
+  .cloze-list li{ line-height:2.1; }
+  .cloze-list .qnum{ font-family:"IBM Plex Mono",monospace; color:var(--ink-faint); font-size:.85rem; margin-right:4px; }
+
+  /* Image cloze: one answer field under each picture */
+  .image-cloze-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; margin:0; }
+  .image-cloze-card{
+    margin:0; padding:12px;
+    background:var(--paper); border:1px solid var(--line); border-radius:8px;
+  }
+  .image-cloze-card img{
+    display:block; width:100%; aspect-ratio:3/2; object-fit:contain;
+    background:var(--panel); border-radius:6px;
+  }
+  .image-cloze-card figcaption{ margin-top:10px; }
+  .image-cloze-card .blank{ display:block; width:100%; min-width:0; margin:0; text-align:center; }
+  .blank{
+    font-family:"Inter",sans-serif; font-size:.96rem; padding:4px 7px;
+    border:1.5px solid var(--line-strong); border-radius:5px;
+    background:var(--paper); color:var(--ink); min-width:90px; margin:0 2px;
+  }
+  .blank:focus{ outline:2px solid var(--accent-mid); outline-offset:1px; }
+  .blank.correct{ border-color:var(--good); background:var(--good-bg); }
+  .blank.incorrect{ border-color:var(--bad); background:var(--bad-bg); }
+
+  .exercise-controls{ margin-top:18px; display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+  button.btn{
+    font-family:"Poppins",sans-serif; font-weight:600; font-size:.88rem; padding:9px 18px;
+    border-radius:6px; border:1.5px solid var(--accent-fill); background:var(--accent-fill); color:#fff; cursor:pointer;
+  }
+  button.btn.secondary{ background:transparent; color:var(--accent-mid); border-color:var(--line-strong); }
+  button.btn:hover{ filter:brightness(1.08); }
+  .score{ font-family:"IBM Plex Mono",monospace; font-size:.88rem; color:var(--ink-soft); }
+  .score.done{ color:var(--good); font-weight:600; }
+
+  /* Matching */
+  .match-grid{ display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+  @media (max-width:560px){ .match-grid{ grid-template-columns:1fr; } }
+  .match-col h4{ margin:0 0 10px; font-size:.8rem; text-transform:uppercase; letter-spacing:.06em; color:var(--ink-faint); }
+  .match-item{
+    padding:10px 12px; margin-bottom:8px; background:var(--paper);
+    border:1.5px solid var(--line-strong); border-radius:6px; font-size:.94rem; cursor:pointer; user-select:none;
+  }
+  .match-item.selected{ border-color:var(--accent-mid); box-shadow:0 0 0 2px var(--accent-soft2); }
+  .match-item.matched{ border-color:var(--good); background:var(--good-bg); cursor:default; }
+  .match-item.wrong{ border-color:var(--bad); background:var(--bad-bg); }
+  .match-item .tag{ display:inline-block; font-family:"IBM Plex Mono",monospace; font-size:.78rem; color:var(--ink-faint); margin-right:8px; }
+
+  /* Word bank + chips */
+  .word-bank{ display:flex; flex-wrap:wrap; gap:8px; margin:0 0 18px; min-height:14px; }
+  .word-chip{
+    font-family:"IBM Plex Mono",monospace; font-size:.85rem; padding:5px 11px; border-radius:14px;
+    background:var(--accent-soft2); color:var(--accent-mid); border:1px solid var(--accent-soft2);
+  }
+  .word-chip.selectable{ cursor:pointer; user-select:none; }
+  .word-chip.chip-selected{ outline:2px solid var(--accent-mid); outline-offset:1px; }
+  .word-chip.chip-correct{ background:var(--good-bg); color:var(--good); border-color:var(--good); }
+  .word-chip.chip-incorrect{ background:var(--bad-bg); color:var(--bad); border-color:var(--bad); }
+
+  /* Choice exercise */
+  .choice-list{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:14px; }
+  .choice-list li{ line-height:2.2; }
+  .choice-list .qnum{ font-family:"IBM Plex Mono",monospace; color:var(--ink-faint); font-size:.85rem; margin-right:4px; }
+  .choice-pill{
+    display:inline-block; padding:5px 13px; border-radius:16px; border:1.5px solid var(--line-strong);
+    font-family:"IBM Plex Mono",monospace; font-size:.85rem; cursor:pointer; color:var(--ink-soft);
+    background:var(--paper); user-select:none; margin:0 3px; max-width:100%;
+  }
+  .choice-inline{ display:inline; }
+  .choice-group{ display:inline-flex; gap:6px; flex-wrap:wrap; vertical-align:middle; margin-left:4px; }
+  .choice-pill.selected{ border-color:var(--accent-mid); color:var(--accent-mid); background:var(--accent-soft2); }
+  .choice-pill.correct{ border-color:var(--good); background:var(--good-bg); color:var(--good); }
+  .choice-pill.incorrect{ border-color:var(--bad); background:var(--bad-bg); color:var(--bad); }
+
+  /* Reference table */
+  .ref-table{ width:100%; border-collapse:collapse; margin:18px 0; font-size:.94rem; }
+  .ref-table th, .ref-table td{ text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); }
+  .ref-table th{ font-family:"Poppins",sans-serif; font-size:.78rem; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-faint); }
+
+  /* Glossary: Term | Translation (PL) | Meaning */
+  .ref-table.glossary-table td:nth-child(1){ width:28%; font-weight:600; }
+  .ref-table.glossary-table td:nth-child(2){ width:20%; font-style:italic; color:var(--accent-mid); }
+  .ref-table.glossary-table td:nth-child(3){ width:52%; color:var(--ink-soft); }
+  .ref-table.glossary-table th:nth-child(2){ color:var(--accent-mid); }
+
+  /* Closing note */
+  .closing-note{
+    margin:52px 0 0; background:var(--accent-fill); color:#fff; border-radius:12px; padding:26px 26px 24px; text-align:center;
+  }
+  .closing-note h3{ margin:0 0 8px; font-size:1.3rem; font-style:italic; }
+  .closing-note p{ margin:0; opacity:.9; }
+
+  footer{ max-width:920px; margin:40px auto 0; padding:20px 0 80px; border-top:1px solid var(--line); font-size:.8rem; color:var(--ink-faint); }
+
+  /* Ordering exercise */
+  .order-list{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:10px; }
+  .order-list li{
+    display:flex; gap:14px; align-items:center;
+    background:var(--paper); border:1px solid var(--line); border-radius:8px; padding:10px 14px;
+  }
+  .order-list .ord-text{ flex:1 1 auto; }
+  .order-blank{ width:68px; min-width:68px; text-align:center; font-family:"IBM Plex Mono",monospace; }
+
+  /* Sorting into columns */
+  .sort-list{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:8px; }
+  .sort-list li{
+    display:flex; gap:12px; align-items:center; justify-content:space-between; flex-wrap:wrap;
+    background:var(--paper); border:1px solid var(--line); border-radius:8px; padding:8px 14px;
+  }
+  .sort-word{ font-weight:600; }
+  select.sort-select{
+    font-family:"Inter",sans-serif; font-size:.88rem; padding:6px 10px;
+    border-radius:6px; border:1.5px solid var(--line-strong); background:var(--paper); color:var(--ink);
+  }
+  select.sort-select.correct{ border-color:var(--good); background:var(--good-bg); color:var(--good); }
+  select.sort-select.incorrect{ border-color:var(--bad); background:var(--bad-bg); color:var(--bad); }
+
+  /* Open answer exercise */
+  .open-list{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:16px; }
+  .open-list li{ background:var(--paper); border:1px solid var(--line); border-radius:8px; padding:12px 14px; }
+  .open-q{ margin:0 0 8px; font-weight:600; }
+  .open-list textarea{
+    width:100%; min-height:72px; border-radius:8px; border:1.5px solid var(--line-strong);
+    background:var(--panel); color:var(--ink); font-family:"Inter",sans-serif; font-size:.95rem;
+    padding:10px; resize:vertical;
+  }
+  .open-list textarea:focus{ outline:2px solid var(--accent-mid); outline-offset:1px; }
+  .open-model{ display:none; margin-top:9px; padding:9px 12px; border-left:3px solid var(--good); background:var(--good-bg); border-radius:0 6px 6px 0; font-size:.92rem; }
+  .open-model.show{ display:block; }
+
+  /* Video activity card */
+  .video-card{ margin:26px 0; padding:20px 22px 18px; background:var(--panel); border:1px solid var(--line); border-radius:10px; }
+  .video-card h3{ margin:0 0 6px; font-size:1.1rem; display:flex; align-items:center; gap:10px; }
+  .video-card .instructions{ color:var(--ink-soft); font-size:.94rem; margin:0 0 16px; }
+  .video-frame{ position:relative; width:100%; aspect-ratio:16/9; margin:0 0 14px; overflow:hidden; border-radius:10px; background:var(--bubble); }
+  .video-frame iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; }
+  .video-link{ margin:0 0 14px; }
+
+  /* Bubble group with a title */
+  .bubble-group{ margin:20px 0; }
+  .bubble-group > h4{ margin:0 0 10px; font-size:.78rem; text-transform:uppercase; letter-spacing:.06em; color:var(--ink-faint); font-family:"Poppins",sans-serif; }
+
+  /* Photo pair inside "Over to you" */
+  .photo-pair{ display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:0 0 16px; }
+  @media (max-width:560px){ .photo-pair{ grid-template-columns:1fr; } }
+  .photo-pair figure{ margin:0; }
+  .photo-pair img{ display:block; width:100%; border-radius:8px; }
+  .oty-questions{ margin:0 0 14px; padding-left:20px; opacity:.92; }
+  .oty-questions li{ margin-bottom:5px; }
+
+  /* Drag & drop ordering exercise */
+  .drag-hint{ font-size:.86rem; color:var(--ink-faint); margin:0 0 12px; }
+  .chip-pool{
+    display:flex; flex-wrap:wrap; gap:10px; padding:14px;
+    background:var(--paper); border:1.5px dashed var(--line-strong); border-radius:10px; min-height:64px;
+  }
+  .chip-pool.over{ border-color:var(--accent-mid); background:var(--accent-soft); }
+  .drag-chip{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:9px 14px; border-radius:8px; cursor:grab; user-select:none;
+    background:var(--bubble); border:1.5px solid var(--line-strong); color:var(--ink);
+    font-size:.94rem; line-height:1.35; max-width:100%;
+  }
+  .drag-chip:hover{ border-color:var(--accent-mid); }
+  .drag-chip.dragging{ opacity:.45; cursor:grabbing; }
+  .drag-chip .num{
+    flex:0 0 auto; width:20px; height:20px; border-radius:50%;
+    background:var(--accent); color:#fff; font-family:"IBM Plex Mono",monospace; font-size:.72rem;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .drop-zone{
+    display:flex; flex-direction:column; gap:8px; padding:14px; min-height:96px;
+    background:var(--paper); border:1.5px solid var(--line-strong); border-radius:10px;
+  }
+  .drop-zone.over{ border-color:var(--accent-mid); background:var(--accent-soft); }
+  .drop-zone .zone-label{ font-size:.78rem; text-transform:uppercase; letter-spacing:.06em; color:var(--ink-faint); font-family:"Poppins",sans-serif; }
+  .drop-zone .zone-empty{ font-size:.9rem; color:var(--ink-faint); font-style:italic; }
+  .drop-zone .drag-chip{ background:var(--paper); border-color:var(--accent-mid); }
+  .drop-zone .drag-chip.correct{ border-color:var(--good); background:var(--good-bg); }
+  .drop-zone .drag-chip.incorrect{ border-color:var(--bad); background:var(--bad-bg); }
+
+  /* Audio listening card */
+  .audio-card{ margin:26px 0; padding:20px 22px 18px; background:var(--panel); border:1px solid var(--line); border-radius:10px; }
+  .audio-card h3{ margin:0 0 6px; font-size:1.1rem; display:flex; align-items:center; gap:10px; }
+  .audio-card .instructions{ color:var(--ink-soft); font-size:.94rem; margin:0 0 16px; }
+  .audio-player{
+    display:flex; align-items:center; gap:16px; flex-wrap:wrap;
+    padding:14px 16px; background:var(--paper); border:1.5px solid var(--line-strong); border-radius:10px;
+  }
+  .audio-player audio{ flex:1 1 340px; min-width:220px; height:36px; }
+  .audio-player .audio-meta{ font-size:.82rem; color:var(--ink-faint); }
+
+  /* Funding logos in the closing note */
+  .funding-row{ display:inline-flex; align-items:center; justify-content:center; gap:22px; flex-wrap:wrap; margin:0 auto 16px; padding:10px 18px; background:#fff; border-radius:10px; }
+  .funding-row img{ max-height:44px; width:auto; }
+  .funding-row img.partner{ max-height:38px; }
+</style>
+
+<div class="top-masthead">
+  <div class="top-masthead-inner">
+    <p class="kicker">Vocational English Module &middot; Interactive Textbook</p>
+    <h1>Vocational English for Catering</h1>
+    <p class="progress-note">Services in a Cafe &middot; Services in a Restaurant &middot; Services in a Bar &middot; Glossary</p>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="contents" id="top">
+    <h2 class="contents-title">Contents</h2>
+    <div class="contents-grid" id="contents-grid"></div>
+  </div>
+</div>
+
+<div id="topics-root"></div>
+
+<div class="wrap">
+  <div class="closing-note">
+    <div class="funding-row">
+      <img src="images/funded-by-eu.jpg" alt="Funded by the European Union">
+      <img class="partner" src="images/eu-logo.jpg" alt="Kedainiu PRC">
+    </div>
+    <h3>Vocational English for Catering</h3>
+    <p><em>Authors: Žilvinas Kapočius, Aurima Bajorūnienė</em></p>
+    <p style="font-size:.78rem; opacity:.72; margin-top:12px; max-width:640px; margin-left:auto; margin-right:auto;">
+      Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not
+      necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA).
+      Neither the European Union nor EACEA can be held responsible for them.<br>
+      Project No. 2021-2-LV01-KA210-VET-000050776-P1 &ldquo;Improving Vocational English Language Abilities for Better
+      Performance in the Profession&rdquo;
+    </p>
+  </div>
+</div>
+
+<script>
+
+function normalize(s){
+  return (s||"").toLowerCase().trim().replace(/[.,!?]/g,"").replace(/\s+/g," ").replace(/-/g," ");
+}
+function altSet(answers){ return answers.map(normalize); }
+
+/* ---------- Generic cloze (token-based, supports multiple blanks per line) ---------- */
+function buildTokenCloze(exId, containerId, lines){
+  const container = document.getElementById(containerId);
+  lines.forEach(line=>{
+    const li = document.createElement('li');
+    li.innerHTML = line.replace(/\{(\d+)(?:\|(given):([^}]*))?\}/g, (m, idx, g, val)=>{
+      if(g==='given') return '<input class="blank correct" type="text" data-idx="'+idx+'" value="'+val+'" disabled>';
+      return '<input class="blank" type="text" data-idx="'+idx+'" autocomplete="off">';
+    });
+    container.appendChild(li);
+  });
+}
+function buildImageCloze(exId, containerId, images){
+  const container = document.getElementById(containerId);
+  images.forEach((image,index)=>{
+    const card = document.createElement('figure');
+    card.className = 'image-cloze-card';
+
+    const img = document.createElement('img');
+    img.src = image.src;
+    img.alt = image.alt || 'Exercise picture';
+    img.loading = 'lazy';
+
+    const caption = document.createElement('figcaption');
+    const input = document.createElement('input');
+    input.className = 'blank';
+    input.type = 'text';
+    input.dataset.idx = index;
+    input.autocomplete = 'off';
+    input.setAttribute('aria-label', 'Description for picture '+(index+1));
+
+    caption.appendChild(input);
+    card.appendChild(img);
+    card.appendChild(caption);
+    container.appendChild(card);
+  });
+}
+function checkExercise(exId){
+  const inputs = document.querySelectorAll('#'+exId+' .blank:not([disabled])');
+  let correct = 0;
+  inputs.forEach(inp=>{
+    const idx = +inp.dataset.idx;
+    const ok = altSet(EX[exId][idx]).includes(normalize(inp.value));
+    inp.classList.remove('correct','incorrect');
+    inp.classList.add(ok?'correct':'incorrect');
+    if(ok) correct++;
+  });
+  const scoreEl = document.getElementById(exId+'-score');
+  scoreEl.textContent = correct+' / '+inputs.length+' correct';
+  scoreEl.classList.toggle('done', correct===inputs.length);
+}
+function revealExercise(exId){
+  const inputs = document.querySelectorAll('#'+exId+' .blank:not([disabled])');
+  inputs.forEach(inp=>{
+    const idx = +inp.dataset.idx;
+    inp.value = EX[exId][idx][0];
+    inp.classList.remove('correct','incorrect');
+    inp.classList.add('correct');
+  });
+  document.getElementById(exId+'-score').textContent = 'Answers revealed';
+}
+function resetExercise(exId){
+  const inputs = document.querySelectorAll('#'+exId+' .blank:not([disabled])');
+  inputs.forEach(inp=>{ inp.value=''; inp.classList.remove('correct','incorrect'); });
+  document.getElementById(exId+'-score').textContent = '';
+}
+function buildBank(exId, containerId, words){
+  const bank = document.getElementById(containerId);
+  words.forEach(w=>{
+    const c = document.createElement('span');
+    c.className='word-chip';
+    c.textContent = w;
+    bank.appendChild(c);
+  });
+}
+
+/* ---------- Matching exercise (generic) ---------- */
+const MATCH = {};
+function renderMatch(exId, pairs){
+  MATCH[exId] = { pairs, selected:null, matchedCount:0 };
+  const leftCol = document.getElementById(exId+'-left');
+  const rightCol = document.getElementById(exId+'-right');
+  leftCol.innerHTML=''; rightCol.innerHTML='';
+  const rightShuffled = pairs.map(p=>p.key).sort(()=>Math.random()-0.5);
+  pairs.forEach((p,i)=>{
+    const el = document.createElement('div');
+    el.className='match-item'; el.dataset.id=i;
+    el.innerHTML = '<span class="tag">'+(i+1)+'</span>'+p.desc;
+    el.onclick = ()=>selectDesc(exId, i, el);
+    leftCol.appendChild(el);
+  });
+  const letters = 'abcdefghij';
+  rightShuffled.forEach((key,i)=>{
+    const label = pairs.find(p=>p.key===key).label;
+    const el = document.createElement('div');
+    el.className='match-item'; el.dataset.key=key;
+    el.innerHTML = '<span class="tag">'+letters[i]+'</span>'+label;
+    el.onclick = ()=>selectTerm(exId, key, el);
+    rightCol.appendChild(el);
+  });
+}
+function selectDesc(exId, id, el){
+  if(el.classList.contains('matched')) return;
+  document.querySelectorAll('#'+exId+'-left .match-item').forEach(e=>e.classList.remove('selected'));
+  el.classList.add('selected');
+  MATCH[exId].selected = id;
+}
+function selectTerm(exId, key, el){
+  const state = MATCH[exId];
+  if(el.classList.contains('matched') || state.selected===null) return;
+  const pair = state.pairs[state.selected];
+  const leftEl = document.querySelector('#'+exId+'-left .match-item[data-id="'+state.selected+'"]');
+  if(pair.key===key){
+    leftEl.classList.add('matched'); leftEl.classList.remove('selected');
+    el.classList.add('matched');
+    state.matchedCount++;
+    document.getElementById(exId+'-score').textContent = state.matchedCount+' / '+state.pairs.length+' matched';
+    document.getElementById(exId+'-score').classList.toggle('done', state.matchedCount===state.pairs.length);
+  } else {
+    el.classList.add('wrong');
+    setTimeout(()=>{ el.classList.remove('wrong'); leftEl.classList.remove('selected'); },500);
+  }
+  state.selected = null;
+}
+function resetMatch(exId){
+  document.getElementById(exId+'-score').textContent = '';
+  renderMatch(exId, MATCH[exId].pairs);
+}
+
+/* ---------- Choice exercise (generic) ---------- */
+const CHOICE = {};
+/* A "..." (or "…") inside a sentence marks the gap the student has to fill. */
+const CHOICE_BLANK = /(\.{3}|…)/;
+function renderChoice(exId, qs){
+  CHOICE[exId] = qs;
+  const list = document.getElementById(exId+'-list');
+  list.innerHTML='';
+  qs.forEach((q,i)=>{
+    const li = document.createElement('li');
+    li.dataset.idx = i;
+    let optsHtml = '';
+    q.options.forEach(opt=>{ optsHtml += '<span class="choice-pill" data-opt="'+opt+'">'+opt+'</span>'; });
+    optsHtml = '<span class="choice-group">'+optsHtml+'</span>';
+    /* If the sentence marks the gap with "...", the option chips go into the
+       sentence itself; otherwise they are listed after it as before. */
+    const blank = q.text.match(CHOICE_BLANK);
+    let body;
+    if(blank){
+      const before = q.text.slice(0, blank.index);
+      let after = q.text.slice(blank.index + blank[0].length);
+      /* "your … ." → "your [chips]." – drop the space in front of punctuation */
+      if(/^\s+[.,;:!?]/.test(after)) after = after.replace(/^\s+/, '');
+      body = before + '<span class="choice-inline">' + optsHtml + '</span>' + after + (q.suffix ? ' ' + q.suffix : '');
+    } else {
+      body = q.text + ' ' + optsHtml + ' ' + q.suffix;
+    }
+    li.innerHTML = '<span class="qnum">'+(i+1)+'</span> '+body;
+    li.querySelectorAll('.choice-pill').forEach(pill=>{
+      pill.onclick = ()=>{
+        li.querySelectorAll('.choice-pill').forEach(p=>p.classList.remove('selected','correct','incorrect'));
+        pill.classList.add('selected');
+      };
+    });
+    list.appendChild(li);
+  });
+}
+function checkChoice(exId){
+  const items = document.querySelectorAll('#'+exId+' .choice-list li');
+  let correct = 0;
+  items.forEach(li=>{
+    const idx = +li.dataset.idx;
+    const answer = CHOICE[exId][idx].answer;
+    const selected = li.querySelector('.choice-pill.selected');
+    li.querySelectorAll('.choice-pill').forEach(p=>p.classList.remove('correct','incorrect'));
+    if(selected && selected.dataset.opt===answer){ selected.classList.add('correct'); correct++; }
+    else if(selected){ selected.classList.add('incorrect'); }
+  });
+  const scoreEl = document.getElementById(exId+'-score');
+  scoreEl.textContent = correct+' / '+items.length+' correct';
+  scoreEl.classList.toggle('done', correct===items.length);
+}
+function revealChoice(exId){
+  const items = document.querySelectorAll('#'+exId+' .choice-list li');
+  items.forEach(li=>{
+    const idx = +li.dataset.idx;
+    const answer = CHOICE[exId][idx].answer;
+    li.querySelectorAll('.choice-pill').forEach(p=>{
+      p.classList.remove('selected','incorrect','correct');
+      if(p.dataset.opt===answer) p.classList.add('correct');
+    });
+  });
+  document.getElementById(exId+'-score').textContent = 'Answers revealed';
+}
+function resetChoice(exId){
+  renderChoice(exId, CHOICE[exId]);
+  document.getElementById(exId+'-score').textContent = '';
+}
+
+/* ---------- "Over to you" notes (persisted in this browser) ---------- */
+const NOTES_PREFIX = 'res-over-to-you:';
+function notesKey(id){ return NOTES_PREFIX + id; }
+function overToYouHtml(b){
+  let h = '<div class="over-to-you">' +
+    '<div class="over-to-you-head"><h3>Over to you</h3></div>' +
+    '<p>'+b.prompt+'</p>';
+  if(b.questions && b.questions.length){
+    h += '<ul class="oty-questions">'+b.questions.map(q=>'<li>'+q+'</li>').join('')+'</ul>';
+  }
+  if(b.video){
+    h += '<div class="over-to-you-video"><iframe loading="lazy" src="'+b.video.src+'" title="'+b.video.title+'" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>';
+  }
+  if(b.images && b.images.length){
+    h += '<div class="photo-pair">'+b.images.map(im=>'<figure><img src="'+im.src+'" alt="'+im.alt+'" loading="lazy"></figure>').join('')+'</div>';
+  }
+  if(b.extra){ h += '<p style="margin-bottom:12px;"><b>'+b.extra+'</b></p>'; }
+  h += '<textarea id="'+b.id+'" placeholder="Type your notes here&hellip;"></textarea>' +
+    '<div class="save-note" data-note-for="'+b.id+'">Saved automatically in this browser only &mdash; not shared with anyone.</div>' +
+    '</div>';
+  return h;
+}
+function initNotes(){
+  document.querySelectorAll('.over-to-you textarea').forEach(ta=>{
+    const key = notesKey(ta.id);
+    const note = ta.parentElement.querySelector('.save-note');
+    let saved = '';
+    try{ saved = window.localStorage.getItem(key) || ''; }catch(e){}
+    if(saved) ta.value = saved;
+
+    let timer = null;
+    ta.addEventListener('input', ()=>{
+      try{ window.localStorage.setItem(key, ta.value); }catch(e){}
+      if(note){
+        note.textContent = 'Notes saved in this browser.';
+        note.classList.add('flash');
+        clearTimeout(timer);
+        timer = setTimeout(()=>{
+          note.textContent = 'Saved automatically in this browser only — not shared with anyone.';
+          note.classList.remove('flash');
+        }, 1800);
+      }
+    });
+  });
+}
+
+
+/* ---------- Drag & drop ordering exercise ---------- */
+const DRAG = {};
+function renderDrag(exId, items, poolOrder){
+  const state = { items, placed: [], poolOrder: poolOrder };
+  DRAG[exId] = state;
+  const pool = document.getElementById(exId+'-pool');
+  const zone = document.getElementById(exId+'-zone');
+  pool.innerHTML='';
+  zone.innerHTML='';
+
+  const order = poolOrder && poolOrder.length ? poolOrder : items.map(it=>it.key);
+  order.forEach(key=>{
+    const it = items.find(x=>x.key===key);
+    if(!it) return;
+    pool.appendChild(makeChip(exId, it, false));
+  });
+
+  zone.innerHTML = '<span class="zone-label">Your order</span><span class="zone-empty">Drag the sentences here, in the correct order.</span>';
+  zone.addEventListener('dragover', e=>{
+    e.preventDefault();
+    e.dataTransfer.dropEffect = 'move';
+    zone.classList.add('over');
+    const after = chipAfterCursor(zone, e.clientY);
+    const dragging = document.querySelector('.drag-chip.dragging');
+    if(dragging){
+      if(after) zone.insertBefore(dragging, after);
+      else zone.appendChild(dragging);
+    }
+  });
+  zone.addEventListener('dragleave', ()=>zone.classList.remove('over'));
+  zone.addEventListener('drop', e=>{
+    e.preventDefault();
+    zone.classList.remove('over');
+    const key = e.dataTransfer.getData('text/plain');
+    const chip = key ? zone.ownerDocument.querySelector('#'+exId+' .drag-chip[data-key="'+key+'"]')
+                     : document.querySelector('.drag-chip.dragging');
+    if(chip && chip.parentElement !== zone){ zone.appendChild(chip); }
+    if(chip) chip.classList.remove('dragging');
+    const empty = zone.querySelector('.zone-empty');
+    if(empty && zone.querySelectorAll('.drag-chip').length) empty.remove();
+  });
+
+  pool.addEventListener('dragover', e=>{ e.preventDefault(); pool.classList.add('over'); });
+  pool.addEventListener('dragleave', ()=>pool.classList.remove('over'));
+  pool.addEventListener('drop', e=>{
+    e.preventDefault();
+    pool.classList.remove('over');
+    const chip = document.querySelector('.drag-chip.dragging');
+    if(chip) pool.appendChild(chip);
+  });
+}
+function makeChip(exId, it, placed){
+  const chip = document.createElement('div');
+  chip.className = 'drag-chip';
+  chip.draggable = true;
+  chip.dataset.key = it.key;
+  chip.innerHTML = '<span class="num"></span><span class="txt"></span>';
+  chip.querySelector('.txt').textContent = it.text;
+  chip.addEventListener('dragstart', e=>{
+    e.dataTransfer.setData('text/plain', it.key);
+    e.dataTransfer.effectAllowed = 'move';
+    chip.classList.add('dragging');
+  });
+  chip.addEventListener('dragend', ()=>chip.classList.remove('dragging'));
+  chip.addEventListener('click', ()=>{
+    /* click is the touch-friendly fallback: pool -> zone, zone -> pool */
+    const zone = document.getElementById(exId+'-zone');
+    const pool = document.getElementById(exId+'-pool');
+    if(chip.parentElement === pool){ zone.appendChild(chip); }
+    else { pool.appendChild(chip); }
+    zone.querySelector('.zone-empty') && zone.querySelector('.zone-empty').remove();
+  });
+  return chip;
+}
+function chipAfterCursor(container, y){
+  const chips = Array.from(container.querySelectorAll('.drag-chip:not(.dragging)'));
+  return chips.reduce((closest, child)=>{
+    const box = child.getBoundingClientRect();
+    const offset = y - box.top - box.height/2;
+    if(offset < 0 && offset > closest.offset) return { offset:offset, element:child };
+    return closest;
+  }, { offset:Number.NEGATIVE_INFINITY, element:null }).element;
+}
+function dragKeys(exId){
+  const zone = document.getElementById(exId+'-zone');
+  return Array.from(zone.querySelectorAll('.drag-chip')).map(c=>c.dataset.key);
+}
+function checkDrag(exId){
+  const state = DRAG[exId];
+  const correct = state.items.map(it=>it.key);
+  const placed = dragKeys(exId);
+  let hits = 0;
+  state.items.forEach((it,i)=>{
+    const chip = document.querySelector('#'+exId+' .drag-chip[data-key="'+it.key+'"]');
+    if(!chip) return;
+    const ok = placed[i] === it.key;
+    chip.classList.remove('correct','incorrect');
+    chip.classList.add(ok?'correct':'incorrect');
+    if(ok) hits++;
+  });
+  const scoreEl = document.getElementById(exId+'-score');
+  scoreEl.textContent = placed.length<correct.length
+    ? hits+' / '+correct.length+' in the right place ('+placed.length+' of '+correct.length+' placed)'
+    : hits+' / '+correct.length+' correct';
+  scoreEl.classList.toggle('done', placed.length===correct.length && hits===correct.length);
+}
+function revealDrag(exId){
+  const state = DRAG[exId];
+  const zone = document.getElementById(exId+'-zone');
+  const pool = document.getElementById(exId+'-pool');
+  zone.innerHTML = '<span class="zone-label">Your order</span>';
+  state.items.forEach(it=>{
+    const chip = makeChip(exId, it, true);
+    chip.classList.add('correct');
+    chip.draggable = false;
+    zone.appendChild(chip);
+  });
+  pool.innerHTML='';
+  document.getElementById(exId+'-score').textContent = 'Answers revealed';
+}
+function resetDrag(exId){
+  const state = DRAG[exId];
+  renderDrag(exId, state.items, state.poolOrder);
+  document.getElementById(exId+'-score').textContent = '';
+}
+
+/* ---------- Ordering exercise (write the position number) ---------- */
+const ORDER = {};
+function renderOrder(exId, items){
+  ORDER[exId] = items;
+  const list = document.getElementById(exId+'-list');
+  list.innerHTML='';
+  items.forEach((it,i)=>{
+    const li = document.createElement('li');
+    const input = document.createElement('input');
+    input.className='blank order-blank';
+    input.type='number';
+    input.min='1';
+    input.max=String(items.length);
+    input.dataset.idx=String(i);
+    input.setAttribute('aria-label','Position number for step '+(i+1));
+    const span = document.createElement('span');
+    span.className='ord-text';
+    span.innerHTML = '<b>'+(i+1)+'.</b> '+it.text;
+    li.appendChild(input);
+    li.appendChild(span);
+    list.appendChild(li);
+  });
+}
+function checkOrder(exId){
+  const items = ORDER[exId];
+  let correct = 0;
+  items.forEach((it,i)=>{
+    const inp = document.querySelector('#'+exId+' .order-blank[data-idx="'+i+'"]');
+    const ok = parseInt(inp.value,10) === it.pos;
+    inp.classList.remove('correct','incorrect');
+    inp.classList.add(ok?'correct':'incorrect');
+    if(ok) correct++;
+  });
+  const scoreEl = document.getElementById(exId+'-score');
+  scoreEl.textContent = correct+' / '+items.length+' correct';
+  scoreEl.classList.toggle('done', correct===items.length);
+}
+function revealOrder(exId){
+  const items = ORDER[exId];
+  items.forEach((it,i)=>{
+    const inp = document.querySelector('#'+exId+' .order-blank[data-idx="'+i+'"]');
+    inp.value = it.pos;
+    inp.classList.remove('incorrect');
+    inp.classList.add('correct');
+  });
+  document.getElementById(exId+'-score').textContent = 'Answers revealed';
+}
+function resetOrder(exId){
+  document.querySelectorAll('#'+exId+' .order-blank').forEach(inp=>{ inp.value=''; inp.classList.remove('correct','incorrect'); });
+  document.getElementById(exId+'-score').textContent = '';
+}
+
+/* ---------- Sorting into columns ---------- */
+const SORT = {};
+function renderSort(exId, cats, items){
+  SORT[exId] = { cats, items };
+  const list = document.getElementById(exId+'-list');
+  list.innerHTML='';
+  items.forEach((it,i)=>{
+    const li = document.createElement('li');
+    const word = document.createElement('span');
+    word.className='sort-word';
+    word.textContent = it.text;
+    const sel = document.createElement('select');
+    sel.className='sort-select';
+    sel.dataset.idx=String(i);
+    sel.innerHTML = '<option value="">choose&hellip;</option>' + cats.map(c=>'<option value="'+c+'">'+c+'</option>').join('');
+    li.appendChild(word);
+    li.appendChild(sel);
+    list.appendChild(li);
+  });
+}
+function checkSort(exId){
+  const state = SORT[exId];
+  let correct = 0;
+  state.items.forEach((it,i)=>{
+    const sel = document.querySelector('#'+exId+' .sort-select[data-idx="'+i+'"]');
+    const ok = sel.value === it.cat;
+    sel.classList.remove('correct','incorrect');
+    sel.classList.add(ok?'correct':'incorrect');
+    if(ok) correct++;
+  });
+  const scoreEl = document.getElementById(exId+'-score');
+  scoreEl.textContent = correct+' / '+state.items.length+' correct';
+  scoreEl.classList.toggle('done', correct===state.items.length);
+}
+function revealSort(exId){
+  const state = SORT[exId];
+  state.items.forEach((it,i)=>{
+    const sel = document.querySelector('#'+exId+' .sort-select[data-idx="'+i+'"]');
+    sel.value = it.cat;
+    sel.classList.remove('incorrect');
+    sel.classList.add('correct');
+  });
+  document.getElementById(exId+'-score').textContent = 'Answers revealed';
+}
+function resetSort(exId){
+  document.querySelectorAll('#'+exId+' .sort-select').forEach(sel=>{ sel.value=''; sel.classList.remove('correct','incorrect'); });
+  document.getElementById(exId+'-score').textContent = '';
+}
+
+/* ---------- Open answer exercise (free writing with a sample answer) ---------- */
+function renderOpen(exId, qs){
+  const list = document.getElementById(exId+'-list');
+  list.innerHTML='';
+  qs.forEach((q,i)=>{
+    const li = document.createElement('li');
+    li.innerHTML = '<p class="open-q">'+q.q+'</p>' +
+      '<textarea placeholder="Write your answer here…" aria-label="Your answer to question '+(i+1)+'"></textarea>' +
+      '<div class="open-model"><b>Sample answer:</b> '+q.model+'</div>';
+    list.appendChild(li);
+  });
+}
+function toggleOpenModels(exId){
+  const models = document.querySelectorAll('#'+exId+' .open-model');
+  const show = !models.length || !models[0].classList.contains('show');
+  models.forEach(m=>m.classList.toggle('show', show));
+}
+function resetOpen(exId){
+  document.querySelectorAll('#'+exId+' .open-list textarea').forEach(t=>{ t.value=''; });
+  document.querySelectorAll('#'+exId+' .open-model').forEach(m=>m.classList.remove('show'));
+  document.getElementById(exId+'-score').textContent = '';
+}
+</script>
+
+<script>
+
+const EX = {};
+
+const TOPICS = [
+/* ============================== UNIT 1 ============================== */
+{
+  id: 'u1',
+  num: 1,
+  title: "Unit 1: Services in a Cafe",
+  blocks: [
+    {
+      type: 'image',
+      src: 'images/intro-croissants.jpg',
+      alt: 'Freshly baked pastries on a wooden tray',
+      caption: 'The bakery delivers the croissants, muffins and pain au chocolat at 6:30 every morning.'
+    },
+    {
+      type: 'reading',
+      title: "A manager's morning: opening the cafe",
+      html: `<p>I arrive at the cafe at 6:00 every morning, before the first customers. The first thing I do is turn on the ovens and check the temperature. Then I switch on the espresso machine so that it has time to heat up. Next, I check the fridges. The milk, cream and butter should be at the right temperature, and I write the readings in the log book.</p>
+<p>The bakery delivers the croissants, muffins and pain au chocolat at 6:30, but the trays need to be arranged in the display case before 7:00. I check each item carefully. Anything that is burnt, cracked or past its best goes in the bin. Freshly baked pastries go on the top shelf, and the older ones go at the back, so that we sell them first.</p>
+<p>At 6:45 the morning team arrives. I brief them for five minutes: who is on the coffee machine, who is on the till, and who looks after the display case. I also remind them of today's special, the cinnamon roll, and of the gluten-free options, because two regular customers always ask for them. Then I restock the cups, lids and napkins.</p>
+<p>By 7:30 the first customers are waiting at the door. Most of them order a flat white and a pastry to take away. During the rush I help behind the counter, because the baristas should not feel alone when the queue is long. Yesterday a customer complained that his cappuccino was cold and his croissant was stale. I apologised, made him a new drink free of charge, and checked the display case again.</p>
+<p>At 9:00 the rush is over. I count the cash in the till, sign the cash-up sheet, and write a list of what we need for the afternoon: milk, sugar, paper cups and two more trays of pain au chocolat.</p>`
+    },
+    {
+      type: 'vocab',
+      html: `<p style="margin:0; font-size:0.95rem; line-height:1.7;">
+<strong>shift</strong> &ndash; a period of time during which a person works<br>
+<strong>log book</strong> &ndash; a book in which records are written down<br>
+<strong>display case</strong> &ndash; a glass cabinet in which food is shown to customers<br>
+<strong>to brief</strong> &ndash; to give somebody short instructions or information before a task<br>
+<strong>to restock</strong> &ndash; to fill up again with items that have been used or sold<br>
+<strong>rush</strong> &ndash; a busy period when many customers arrive at the same time<br>
+<strong>queue</strong> &ndash; a line of people waiting for something<br>
+<strong>stale</strong> &ndash; not fresh<br>
+<strong>to apologise</strong> &ndash; to say sorry<br>
+<strong>cash-up</strong> &ndash; the process of counting the money in the till at the end of a shift
+</p>`
+    },
+    {
+      type: 'exercise',
+      exercises: [
+        {
+          type: 'choice',
+          id: 'u1exTFmorning',
+          tag: '1.1',
+          title: "True or false on the basis of the text",
+          instr: "Read the text \"A manager's morning: opening the cafe\" again. Are these statements true or false?",
+          qs: [
+            { text: "The manager arrives at the cafe at 6:00 every morning.", options: ["true", "false"], suffix: "", answer: "true" },
+            { text: "The manager switches on the espresso machine before the ovens.", options: ["true", "false"], suffix: "", answer: "false" },
+            { text: "The morning team arrives before the pastries are delivered.", options: ["true", "false"], suffix: "", answer: "false" },
+            { text: "Older pastries are placed at the back of the display case so that they are sold first.", options: ["true", "false"], suffix: "", answer: "true" },
+            { text: "The manager gives a free drink to a customer who complained about his order.", options: ["true", "false"], suffix: "", answer: "true" }
+          ]
+        },
+      ]
+    },
+    {
+      type: 'audio',
+      tag: '1.2',
+      title: "Listening: ordering at the cafe",
+      instr: "Listen to the dialogue twice, then answer the questions below.",
+      src: 'images/dialogue.mp3',
+    },
+    {
+      type: 'exercise',
+      exercises: [
+        {
+          type: 'cloze',
+          id: 'u1exListening',
+          tag: '1.2',
+          title: "Listening: answer the questions",
+          instr: "Listen to the dialogue and complete the answers with one or two words.",
+          lines: [
+            "1. What size coffee does the customer order? He asks for a {0} one.",
+            "2. Does he want to have the coffee in the cafe or take it away? He wants to have it {1}.",
+            "3. What does he choose to eat? He chooses the {2}.",
+            "4. How much does the order cost? The customer pays \u00a3{3}."
+          ],
+          answers: [
+            ["large"],
+            ["here"],
+            ["toast"],
+            ["6.50", "6,50", "650"]
+          ]
+        }
+      ]
+    },
+    {
+      type: 'exercise',
+      exercises: [
+        {
+          type: 'match',
+          id: 'u1exMatch',
+          tag: '1.3',
+          title: "Match the terms with their explanations",
+          instr: "Match the coffee terms in column A with the explanations in column B.",
+          leftLabel: "Term",
+          rightLabel: "Explanation",
+          pairs: [
+            { desc: "Latte", key: "latte", label: "a coffee drink made with espresso and steamed milk" },
+            { desc: "Flat white", key: "flatwhite", label: "prepared by pouring microfoam (steamed milk with small, fine bubbles and a glossy or velvety consistency) over a single or double shot of espresso" },
+            { desc: "Espresso", key: "espresso", label: "strong, dark coffee prepared by forcing a small amount of nearly boiling water under pressure through finely ground coffee beans" },
+            { desc: "Americano", key: "americano", label: "a style of coffee prepared by adding hot water to espresso" },
+            { desc: "Crema", key: "crema", label: "the caramel-coloured foam that appears on top of a shot of espresso during the brewing period; it should remain for at least one minute" },
+            { desc: "Macchiato", key: "macchiato", label: "a coffee drink with a small amount of milk added" },
+            { desc: "Robusta", key: "robusta", label: "a low-growing, high-yield coffee tree, producing full-bodied but bland coffee of inferior quality and higher caffeine than Arabica; used in cheap blends and instant coffee" },
+            { desc: "Decaffeinated coffee", key: "decaf", label: "a coffee that has undergone a certain process to remove caffeine from the coffee beans" },
+            { desc: "Barista", key: "barista", label: "a person who makes coffee drinks as a profession" },
+            { desc: "Cappuccino", key: "cappuccino", label: "an Italian coffee drink which is traditionally prepared with espresso, hot milk and steamed milk foam" }
+          ]
+        },
+        {
+          type: 'cloze',
+          id: 'u1exConv',
+          tag: '1.4',
+          title: "Complete the conversations",
+          instr: "Complete the conversations with the words below.",
+          bank: ["egg", "else", "Espresso", "help", "Here", "How", "mineral", "Still", "Sugar", "White", "With"],
+          lines: [
+            "A: Yes. Can I have a {0} water, please?",
+            "B: OK. {1} or sparkling?",
+            "A: Sparkling, please.",
+            "B: OK.",
+            "A: {2} much is that?",
+            "B: Two euros.",
+            "A: Can I {3} you?",
+            "B: Can I have an {4} sandwich, please?",
+            "A: OK. {5} or brown bread?",
+            "B: Brown, please.",
+            "A: Anything {6}?",
+            "B: A coffee, please.",
+            "A: {7}, Americano or cappuccino?",
+            "B: Americano, please.",
+            "A: {8} milk?",
+            "B: Yes, please.",
+            "A: {9}?",
+            "B: No, thanks.",
+            "A: OK. {10} you are."
+          ],
+          answers: [
+            ["mineral", "mineral water"],
+            ["Still", "still"],
+            ["How", "how"],
+            ["help"],
+            ["egg"],
+            ["White", "white"],
+            ["else"],
+            ["Here", "here", "Espresso", "espresso"],
+            ["With", "with"],
+            ["Sugar", "sugar"],
+            ["Thank", "thank"]
+          ]
+        },
+        {
+          type: 'cloze',
+          id: 'u1exPhotos',
+          tag: '1.5',
+          title: "Label the photos",
+          instr: "Write the correct word from the list under each photo.",
+          bank: ["macchiato", "coffee beans", "barista", "caffè Americano", "espresso", "French press", "instant coffee", "cappuccino"],
+          lines: [],
+          images: [
+            { src: 'images/ex-1-3-a.jpg', alt: 'Photo a: a small white cup of espresso on a saucer' },
+            { src: 'images/ex-1-3-b.jpg', alt: 'Photo b: a glass of black coffee with crema on top' },
+            { src: 'images/ex-1-3-c.jpg', alt: 'Photo c: roasted coffee beans' },
+            { src: 'images/ex-1-3-d.jpg', alt: 'Photo d: a barista in a coffee bar' },
+            { src: 'images/ex-1-3-e.jpg', alt: 'Photo e: instant coffee granules' },
+            { src: 'images/ex-1-3-f.jpg', alt: 'Photo f: a cappuccino with latte art' },
+            { src: 'images/ex-1-3-g.jpg', alt: 'Photo g: a glass mug of macchiato' },
+            { src: 'images/ex-1-3-h.jpg', alt: 'Photo h: a French press' }
+          ],
+          answers: [
+            ["espresso"],
+            ["macchiato"],
+            ["coffee beans", "beans"],
+            ["barista"],
+            ["instant coffee"],
+            ["cappuccino"],
+            ["caffè americano", "cafe americano", "americano", "caffè"],
+            ["french press", "frenchpress"],
+          ]
+        },
+        {
+          type: 'cloze',
+          id: 'u1exPast',
+          tag: '1.6',
+          title: "Complete the dialogue with the past simple",
+          instr: "Complete the dialogue with the words below. <a href='https://learnenglish.britishcouncil.org/grammar/english-grammar-reference/past-simple' target='_blank' rel='noopener'>Past simple reference</a>",
+          bank: ["enjoyed", "swam", "flew", "went", "was", "bought", "stayed", "played", "were", "wanted", "visited", "had"],
+          lines: [
+            "Pamela: I {0} to stop by you for a cup of coffee last Monday, but nobody opened the door. Where were you, Kelly?",
+            "Kelly: Oh, we weren't at home. George and I needed a holiday for some time. We took the kids and {1} to Antalya, Turkey for a week.",
+            "Pamela: Really? How was it like? Did you have a good time?",
+            "Kelly: Yes, it was marvellous. We all felt relaxed and we were all fascinated by Turkey's beauty. The weather was hot and sunny every day.",
+            "Pamela: Where did you stay?",
+            "Kelly: We {2} at a five-star hotel. It was so luxurious and cheap. It {3} a big swimming pool and a lot of slides. Molly and Brian {4} them a lot. Our room was comfortable and it had a beautiful sea view.",
+            "Pamela: How {5} the food? Did you try Turkish cuisine?",
+            "Kelly: The food was so delicious. I especially liked kebabs and seafood there. There {6} lots of good restaurants.",
+            "Pamela: How did you spend your days?",
+            "Kelly: As soon as we had our breakfast in the morning, we usually went to the beach, {7} in the sea and sunbathed. Brian and Molly tried windsurfing and they {8} beach volleyball. In the afternoons we {9} historic places and learned much about ancient civilisations.",
+            "Pamela: Did you do any shopping?",
+            "Kelly: Yes, of course. On Wednesday afternoon we visited the shops and {10} some souvenirs for our relatives and friends. George and Brian bought lots of t-shirts and jeans for themselves. Molly and I bought some handbags and dresses.",
+            "Pamela: When did you come back home?",
+            "Kelly: We {11} back home on Friday evening."
+          ],
+          answers: [
+            ["wanted"], ["went"], ["stayed"], ["had"], ["enjoyed"], ["was"],
+            ["were"], ["swam"], ["played"], ["visited"], ["bought"], ["flew"]
+          ]
+        },
+        {
+          type: 'choice',
+          id: 'u1exWord',
+          tag: '1.7',
+          title: "Choose the correct word",
+          instr: "Fill in each blank with the correct word. If both words can be used, choose the one that sounds more natural in each situation.",
+          qs: [
+            { text: "All of our coffee drinks are espresso-...", options: ["based", "rooted"], suffix: ".", answer: "based" },
+            { text: "This drink has two ... of espresso. It's very strong.", options: ["shoots", "shots"], suffix: ".", answer: "shots" },
+            { text: "The milk is on the little table at the end of the...", options: ["floor", "counter"], suffix: ".", answer: "counter" },
+            { text: "A tip-... is a container where customers can leave tips for baristas.", options: ["jar", "compartment"], suffix: ".", answer: "jar" },
+            { text: "... is short for \"decaffeinated\".", options: ["Caffeinated", "Decaf"], suffix: "", answer: "Decaf" },
+            { text: "If someone is lactose-... it means that they can't drink milk.", options: ["introspective", "intolerant"], suffix: ".", answer: "intolerant" },
+            { text: "This is the smallest ... cup we have.", options: ["size", "dimension"], suffix: "", answer: "size" },
+            { text: "A ... cup is a paper cup that is designed to hold hot liquids like coffee.", options: ["hot", "heat"], suffix: "", answer: "hot" },
+            { text: "Starbucks is an example of a ... (= a cafe/restaurant which has multiple locations)", options: ["chain", "keychain"], suffix: ".", answer: "chain" },
+            { text: "Your coffee will be ready in a ... of minutes. I'll call you.", options: ["few", "couple"], suffix: "", answer: "couple" }
+          ]
+        },
+      ]
+    },
+    {
+      type: 'bubbles',
+      title: "Do you want to go to Starbucks",
+      items: [
+        "Do you want to go to Starbucks?",
+        "I do not drink coffee. Do they have other things?",
+        "Of course! They have tea, water, hot chocolate and pastries.",
+        "That sounds great. I'm going to get a scone and green tea.",
+        "Delicious!"
+      ]
+    },
+    {
+      type: 'bubbles',
+      title: "A small cup of coffee",
+      items: [
+        "Hi, how may I help you?",
+        "I usually get a large coffee but would like something lighter today. What do you have?",
+        "You could get any small coffee, a cappuccino or a shot of espresso.",
+        "I think I will try the small cappuccino. What flavors do you have?",
+        "Of course. And for you, sir?"
+      ]
+    },
+    {
+      type: 'notes',
+      items: [
+        "Now try to make the same kinds of dialogues &ndash; write them in your notebook below."
+      ]
+    },
+    {
+      type: 'exercise',
+      exercises: [
+        {
+          type: 'choice',
+          id: 'u1exWriting',
+          tag: '1.8',
+          title: "Writing test: fill in the correct word",
+          instr: "Fill in each blank with the correct word. If both words can be used, choose the one that sounds more natural in each situation.",
+          qs: [
+            { text: "An Americano is a shot of espresso ... into a glass of hot water.", options: ["poured", "placed"], suffix: ".", answer: "poured" },
+            { text: "If you prefer, we can ... the regular milk with soy milk.", options: ["substitute", "change"], suffix: ".", answer: "substitute" },
+            { text: "Our muffins are ... fresh every morning.", options: ["baked", "cooked"], suffix: "", answer: "baked" },
+            { text: "All of our coffees are made from high-... beans.", options: ["worth", "quality"], suffix: "", answer: "quality" },
+            { text: "Make sure you grind the coffee beans right before you ... the coffee.", options: ["brew", "do"], suffix: ".", answer: "brew" },
+            { text: "A cappuccino is a combination of coffee, ... milk, and foam.", options: ["steamed", "steam"], suffix: "", answer: "steamed" },
+            { text: "Milk foam is commonly referred to as \"...\"", options: ["froth", "freight"], suffix: ".", answer: "froth" },
+            { text: "This is our most ... coffee = This is the coffee that we sell the most.", options: ["populist", "popular"], suffix: "", answer: "popular" },
+            { text: "All the tables inside are occupied, but our outside ... has plenty of free tables.", options: ["patio", "zone"], suffix: ".", answer: "patio" },
+            { text: "\"...\" is a very common slang word for \"coffee.\"", options: ["Java", "Brownie"], suffix: ".", answer: "Java" }
+          ]
+        }
+      ]
+    },
+    {
+      type: 'exercise',
+      exercises: [
+        {
+          type: 'cloze',
+          id: 'u1exMenu',
+          tag: '1.9',
+          title: "Fill in the blanks with the words below",
+          instr: "Zoe and her friends are reading the menu in the cafe.",
+          bank: ["better", "how", "medium", "fries", "menu", "pumpkin pies", "order", "taste"],
+          lines: [
+            "Waitress: May I take your {0}?",
+            "Cathy: Yes. I'd like the ham and cheese sandwich.",
+            "Zoe: I'll have a cheeseburger, please.",
+            "Alex: May I have the steak with {1}? It looks delicious.",
+            "Waitress: {2} would you like your steak?",
+            "Alex: {3}, please. How about you, Jamie?",
+            "Jamie: I'll have a hamburger and two {4} with ice cream. The pumpkin pies here {5} good and smell great!",
+            "Alex: Really? I want one, too.",
+            "Zoe: You two have a {6} appetite than I do."
+          ],
+          answers: [
+            ["menu"], ["fries"], ["how"], ["medium"], ["pumpkin pies"], ["taste"], ["better"]
+          ]
+        }
+      ]
+    },
+    {
+      type: 'over2you',
+      id: 'oty-u1',
+      prompt: 'Please describe, compare and contrast the two pictures (you have 1 minute of uninterrupted preparation time and 2 minutes for speaking).',
+      questions: [
+        "Why do people like to sit in cafes drinking coffee and using their computers, rather than just doing that at home?",
+        "Do people talk louder after drinking coffee?",
+        "Is it true that people who do not drink coffee have higher energy levels than people who drink coffee every day?",
+        "What do coffee shop owners think of people who buy a single coffee and then sit at a table with a laptop for the entire day?",
+        "Other than coffee, what drinks do you prefer? Why?"
+      ],
+      images: [
+        { src: 'images/over-to-you-unit1-1.jpg', alt: 'A cosy cafe interior with wooden furniture and warm lights' },
+        { src: 'images/over-to-you-unit1-2.jpg', alt: 'A busy outdoor cafe terrace on a sunny city street' }
+      ]
+    }
+  ]
+},
+/* ============================== UNIT 2 ============================== */
+{
+  id: 'u2',
+  num: 2,
+  title: "Unit 2: Services in a Restaurant",
+  blocks: [
+    {
+      type: 'reading',
+      title: "Breakfast",
+      html: `<p>One Sunday morning, my family and I went to a popular restaurant for breakfast. As soon as we walked into Restaurant Happy Meal, a young waitress showed us to a table. We ordered our food and soon after, our food came. Just as we were about to begin our meal, we heard someone shouting for the proprietor.</p>
+<p>"What is this? A dead fly in my food!" a man with a deep scar across his face roared angrily. He banged his fist on the table and swept the plates and cups off it. These came crashing to the floor, breaking into pieces. His companion, a huge man with a tattoo on his arm, stared angrily at the proprietor who stood nervously in front of the two gangsters.</p>
+<p>The proprietor apologized repeatedly to the angry customers and tried to pacify them by offering to replace their food. He even told them that they could have their meal for free.</p>
+<p>The commotion affected the business of the restaurant. Fearing that a brawl would ensue, many customers quickly paid for their meals and left the restaurant hurriedly. Some of them had not even finished their breakfast.</p>
+<p>My father told us to eat our food quickly and not to look at the two angry men. We obeyed him and finished our food within minutes. That was probably the quietest and fastest breakfast my family ever had.</p>
+<p>Although my father warned us not to look at the two unruly customers, I could not help stealing a glance at them.</p>
+<p>I saw that the proprietor had managed to pacify the two angry customers. Fresh food and drinks were brought to their table. They sat down again and continued their breakfast. Meanwhile, the waitress who had shown us to our table earlier swept up the broken china.</p>`
+    },
+    {
+      type: 'terms',
+      items: [
+        "<b>proprietor</b> &ndash; the owner of a business establishment, a hotel, etc.",
+        "<b>scar</b> &ndash; a mark left by a healed wound, sore, or burn",
+        "<b>to sweep</b> &ndash; to move or remove (dust, dirt, etc.) with or as if with a broom or brush",
+        "<b>to pacify</b> &ndash; to bring or restore to a state of peace or calm",
+        "<b>commotion</b> &ndash; violent or tumultuous motion; agitation; noisy disturbance",
+        "<b>brawl</b> &ndash; an angry, rough, noisy fight, especially one under the influence of alcohol",
+        "<b>to ensue</b> &ndash; to follow in order; come afterward, especially in immediate succession",
+        "<b>hurriedly</b> &ndash; in a way that is done very quickly or too quickly",
+        "<b>unruly</b> &ndash; difficult to control; not obeying rules",
+        "<b>to glance</b> &ndash; to give a quick, short look",
+        "<b>china</b> &ndash; high-quality clay shaped and heated to make it hard, or objects made from it, such as cups and plates"
+      ]
+    },
+    {
+      type: 'reading',
+      title: "What a British Person Should Know When Eating Out in America",
+      html: `<p>Eating out may be a simple thing, but for British people who have just come to America, it could be an experience full of surprises. Here are five main differences a Brit should pay attention to when eating out in a restaurant in America.</p>
+<p><strong>Ordering drinks.</strong> The first thing a waiter would ask when you sit down in an American restaurant is whether you would like bottled or tap water. If you choose bottled, you will then be asked whether you would prefer still or sparkling. Soon, the water you ordered will be brought to you. Coffee and soft drinks will also be gladly refilled. The waiter will proactively ask if you want another coffee or Coke. In Britain, water and soft drinks must be requested and they are not free.</p>
+<p><strong>The service.</strong> Waiters in American restaurants are more pleasant and attentive. They are always chatty and often come to your table during the meal to refill drinks and check everything is okay. In England, waiters are less likely to frequently check on customers. If you need something, you can raise your hand and wave at the waiter or else you will be left alone for hours.</p>
+<p><strong>The menu.</strong> In an American restaurant, picky eaters can customize the menu to suit their exact preferences by reeling off special requirements and substitutions. You can order salad but without tomato or with a special dressing to accommodate your diet. There is a friendly atmosphere that encourages you to have exactly what you want and satisfy your appetite. On the other hand, people in England tend to order a meal with all the options that come with it. It is less common for them to complain about the food or have the waiter send dishes back to the kitchen.</p>
+<p><strong>Picking up the bill.</strong> In America, a waiter will bring you the bill even though you have not asked for it. This would be seen as very impolite by British customers, as it implies that they are being hurried out of the restaurant.</p>
+<p><strong>Tipping.</strong> Tipping in England is optional. You will tip if you are satisfied with the meal and service, which is generally about 10%. If you are dissatisfied, you do not need to tip and this is quite common. In America, a tip of 15&ndash;20% is generally mandatory. For American waiters, tipping is the main source of their income. Even if the service is bad you should still tip, but it makes sense to give a smaller tip.</p>`
+    },
+    {
+      type: 'terms',
+      items: [
+        "<b>tap</b> &ndash; a device that controls the flow of liquid, especially water, from a pipe",
+        "<b>sparkling</b> &ndash; a sparkling drink contains many small bubbles of gas",
+        "<b>proactively</b> &ndash; in a way that causes change by taking action, rather than reacting to changes",
+        "<b>chatty</b> &ndash; liking to talk a lot in a friendly, informal way",
+        "<b>to waive</b> &ndash; to dismiss with or as if with a wave of the hand",
+        "<b>to reel off</b> &ndash; to recite or write fluently and without apparent effort",
+        "<b>to imply</b> &ndash; to indicate or suggest without being explicitly stated"
+      ]
+    },
+    {
+      type: 'exercise',
+      exercises: [
+        {
+          type: 'cloze',
+          id: 'u2ex1',
+          tag: '2.1',
+          title: "Use the words to complete the sentences",
+          instr: "Complete the dialogue with the words below.",
+          bank: ["bill", "bottle", "dessert", "drinks", "fish and chips", "hungry", "menu", "non-smoker", "order", "table"],
+          lines: [
+            "Guest: A {0} for two, please.",
+            "Waiter: Smoker or {1}? Guest: Non-smoker, please.",
+            "Waiter: Here you go. Would you like to see the {2}?",
+            "Guest: Yes, please. We are very {3}. (The guests look at the menu.)",
+            "Waiter: Are you ready to {4}?",
+            "Guest: We'd like {5}, please.",
+            "Waiter: Would you like any {6}?",
+            "Guest: An orange juice, a Coke and a {7} of red wine. (The guests have finished their meals.)",
+            "Waiter: Would you like a {8}?",
+            "Guest: No, thank you. Could we have the {9}, please?"
+          ],
+          answers: [
+            ["table"], ["non-smoker"], ["menu"], ["hungry"], ["order"],
+            ["fish and chips"], ["drinks"], ["bottle"], ["dessert"], ["bill"]
+          ]
+        },
+        {
+          type: 'cloze',
+          id: 'u2ex2',
+          tag: '2.2',
+          title: "Complete the sentences with the pairs of words",
+          instr: "Complete the sentences with the pairs of words below.",
+          lines: [
+            "The first time I went there, the food was {0}, but I went there again recently and it was {1}.",
+            "It's quite good value for {2}. It's quite cheap &ndash; and you get really big {3}.",
+            "The {4} is great. The {5} are always really friendly and polite.",
+            "It often gets really {6} and you sometimes have to wait to get a {7}.",
+            "It's a good selection of {8}. There's plenty to {9} from.",
+            "It's OK, but there isn't much {10}. They don't have any vegetarian {11}.",
+            "There's a little Japanese {12} near my office and they {13} great sushi!",
+            "It's great. You can sit outside on the {14} there and get an incredible {15} of the city."
+          ],
+          answers: [
+            ["delicious"], ["disgusting"], ["money"], ["portions"], ["service"], ["staff"],
+            ["busy"], ["seat"], ["dishes"], ["choose"], ["choice"], ["options"],
+            ["place"], ["do"], ["terrace"], ["view"]
+          ]
+        },
+        {
+          type: 'match',
+          id: 'u2ex3',
+          tag: '2.3',
+          title: "Match the parts of the meal with their descriptions",
+          instr: "Match each part of the meal with the right description.",
+          leftLabel: "Part of the meal",
+          rightLabel: "Description",
+          pairs: [
+            { desc: "Starter", key: "starter", label: "the first part of the meal" },
+            { desc: "Main course", key: "main", label: "the largest or most important part of the meal" },
+            { desc: "Dessert", key: "dessert", label: "sweet food that you eat at the end of the meal" },
+            { desc: "Appetiser", key: "appetiser", label: "a small amount of food that you eat before a meal" },
+            { desc: "Side dish", key: "side", label: "a small extra order of food served on a separate plate" },
+            { desc: "Aperitif", key: "aperitif", label: "an alcoholic drink usually drunk before a meal" }
+          ]
+        },
+        {
+          type: 'sort',
+          id: 'u2ex4',
+          tag: '2.4',
+          title: "Put the words into the correct columns",
+          instr: "Choose the correct column for every dish or drink.",
+          categories: ["STARTERS", "MAIN COURSE", "SIDE DISHES", "DESSERTS", "DRINKS"],
+          items: [
+            { text: "coffee", cat: "DRINKS" },
+            { text: "vegetable soup", cat: "STARTERS" },
+            { text: "grilled salmon", cat: "MAIN COURSE" },
+            { text: "baked potatoes", cat: "SIDE DISHES" },
+            { text: "ice cream", cat: "DESSERTS" },
+            { text: "garlic bread", cat: "STARTERS" },
+            { text: "peas and carrots", cat: "SIDE DISHES" },
+            { text: "tea", cat: "DRINKS" },
+            { text: "rice", cat: "SIDE DISHES" },
+            { text: "chocolate cake", cat: "DESSERTS" },
+            { text: "lasagna", cat: "MAIN COURSE" },
+            { text: "mineral water", cat: "DRINKS" },
+            { text: "white wine", cat: "DRINKS" },
+            { text: "roast beef with vegetables", cat: "MAIN COURSE" },
+            { text: "orange juice", cat: "DRINKS" },
+            { text: "pasta with tomato sauce", cat: "MAIN COURSE" },
+            { text: "bacon and cheese burger", cat: "MAIN COURSE" },
+            { text: "onion rings", cat: "STARTERS" },
+            { text: "tomato soup", cat: "STARTERS" },
+            { text: "fruit salad", cat: "DESSERTS" },
+            { text: "fish and chips", cat: "MAIN COURSE" },
+            { text: "red wine", cat: "DRINKS" },
+            { text: "sparkling water", cat: "DRINKS" },
+            { text: "chicken and mushroom pie", cat: "MAIN COURSE" },
+            { text: "French fries", cat: "SIDE DISHES" },
+            { text: "apple pie", cat: "DESSERTS" }
+          ]
+        },
+        {
+          type: 'choice',
+          id: 'u2ex5',
+          tag: '2.5',
+          title: "Choose the correct word",
+          instr: "Fill in each blank with the correct word. If both words can be used, choose the one that sounds more natural in each situation.",
+          qs: [
+            { text: "Are you ... to order?", options: ["prepared", "ready"], suffix: "", answer: "ready" },
+            { text: "The soup of the ... is \"Cream of Broccoli.\"", options: ["day", "special"], suffix: "", answer: "special" },
+            { text: "Our ... are listed on the board.", options: ["specials", "deals"], suffix: "", answer: "specials" },
+            { text: "I ... the vegetarian chili.", options: ["recommend", "request"], suffix: "", answer: "recommend" },
+            { text: "We can ... the bacon for cheese, if you like. (= We can give you cheese instead of bacon)", options: ["substitute", "subtract"], suffix: "", answer: "substitute" },
+            { text: "I'll be right ... with your drinks.", options: ["back", "return"], suffix: "", answer: "back" },
+            { text: "This meal consists of three courses &ndash; soup, the ... course, and dessert.", options: ["main", "prime"], suffix: "", answer: "main" },
+            { text: "The chicken ... with your choice of rice or potatoes.", options: ["comes", "arrives"], suffix: "", answer: "comes" },
+            { text: "I'm sorry, we're fully/completely ... (= we have no free tables) right now.", options: ["booked", "baked"], suffix: "", answer: "booked" },
+            { text: "If you would like, you can wait at the bar until a table ... up. (= becomes available)", options: ["opens", "comes"], suffix: "", answer: "comes" }
+          ]
+        },
+        {
+          type: 'choice',
+          id: 'u2ex6',
+          tag: '2.6',
+          title: "Choose the correct word (II)",
+          instr: "Fill in each blank with the correct word. If both words can be used, choose the one that sounds more natural in each situation.",
+          qs: [
+            { text: "I'm sorry for the ... . Your food will be right out.", options: ["tardiness", "delay"], suffix: "", answer: "tardiness" },
+            { text: "Are you paying together, or would you like separate ... ? (= Americans say \"checks\")", options: ["bills", "receipts"], suffix: "", answer: "bills" },
+            { text: "There's an automatic 15% ... added to parties of 8 or more.", options: ["grace", "gratuity"], suffix: "", answer: "gratuity" },
+            { text: "We accept all ... credit cards.", options: ["primary", "major"], suffix: "", answer: "major" },
+            { text: "The bread is free-of-... . (= You don't have to pay for it)", options: ["charging", "charge"], suffix: "", answer: "charge" },
+            { text: "The drinks are in the ... of the menu.", options: ["back", "rear"], suffix: "", answer: "back" },
+            { text: "We have ... of (= many) vegetarian options as well.", options: ["plenty", "plentiful"], suffix: "", answer: "plenty" },
+            { text: "Follow me, please &ndash; I'll ... you to your table.", options: ["show", "seat"], suffix: "", answer: "seat" },
+            { text: "You can get the salad on the ... . (= not on the same dish as the main meal)", options: ["side", "separate"], suffix: "", answer: "side" },
+            { text: "It'll ... about half an hour to prepare.", options: ["take", "last"], suffix: "", answer: "take" }
+          ]
+        },
+        {
+          type: 'choice',
+          id: 'u2ex7',
+          tag: '2.7',
+          title: "Choose the word that best fits the sentence",
+          instr: "Choose the best answer for each sentence.",
+          qs: [
+            { text: "I'm sorry, but my meal is cold, could you please ... for me?", options: ["warm it up", "make it warm"], suffix: "", answer: "warm it up" },
+            { text: "After that meal I was quite ...", options: ["full", "complete"], suffix: ".", answer: "full" },
+            { text: "Whatever you can't finish, you can take home in a ...", options: ["box", "boxes"], suffix: ".", answer: "box" },
+            { text: "Knives, spoons, and forks = ...", options: ["food tools", "cutlery"], suffix: ".", answer: "cutlery" },
+            { text: "I ... soup, but they brought me a salad.", options: ["ordered", "decided"], suffix: "", answer: "ordered" },
+            { text: "In most fancy restaurants, the ... is usually excellent.", options: ["service", "responsibility"], suffix: "", answer: "service" },
+            { text: "A restaurant where customers serve themselves is called a ...", options: ["buffet", "kiosk"], suffix: ".", answer: "buffet" },
+            { text: "If your waiter/waitress provided good service, you should leave a big ...", options: ["tip", "top"], suffix: ".", answer: "tip" },
+            { text: "McDonald's is a ... restaurant.", options: ["fast eat", "fast food"], suffix: "", answer: "fast food" },
+            { text: "We're not paying together. We are on separate ...", options: ["pay", "checks"], suffix: ".", answer: "checks" }
+          ]
+        },
+        {
+          type: 'choice',
+          id: 'u2ex8',
+          tag: '2.8',
+          title: "True or false on the basis of the text \"Breakfast\"",
+          instr: "Read the text \"Breakfast\" again and choose the correct answer.",
+          qs: [
+            { text: "The word 'These' refers to the...", options: ["tables", "cups and plates", "two angry customers", "dead fly and the food"], suffix: "", answer: "cups and plates" },
+            { text: "The fourth paragraph tells us that the owner of the restaurant was...", options: ["sorry for what had happened", "angry with the two customers", "unsure of what to do to calm the two customers", "disappointed that the men created problems in the restaurant"], suffix: "", answer: "sorry for what had happened" },
+            { text: "The word 'ensue' can best be replaced by...", options: ["occur", "debut", "initiate", "take off"], suffix: ".", answer: "occur" },
+            { text: "\"That was probably the quietest and fastest breakfast my family ever had\" tells us that the writer and his family...", options: ["often talked while they ate", "ordered a lot of food each time they ate out", "often ate silently and that day was no exception", "usually did not like to be disturbed while they ate"], suffix: ".", answer: "often ate silently and that day was no exception" },
+            { text: "The following statements are true except...", options: ["the two customers did not have to pay for their food", "the writer and his family ate their food without a word", "one of the waitresses cleared up the mess on the floor", "many customers ran out of the restaurant without paying"], suffix: ".", answer: "many customers ran out of the restaurant without paying" },
+            { text: "Which word describes the atmosphere at the restaurant when the angry customer found a dead fly in his food?", options: ["sad", "tense", "happy", "distracted"], suffix: ".", answer: "tense" }
+          ]
+        },
+        {
+          type: 'choice',
+          id: 'u2ex9',
+          tag: '2.9',
+          title: "Answer the questions on the basis of the text",
+          instr: "Read the text \"What a British Person Should Know When Eating Out in America\" again and choose the correct answer.",
+          qs: [
+            { text: "What would a waiter ask first in an American restaurant?", options: ["Whether you would like water or soft drink", "Whether you would like bottled or tap water", "Whether you would like coffee", "Whether you would like a cocktail"], suffix: "", answer: "Whether you would like bottled or tap water" },
+            { text: "What is a waiter in Britain less likely to do?", options: ["Check on customers", "Ask for tips", "Bring the menu", "Take an order"], suffix: "", answer: "Check on customers" },
+            { text: "What are British customers less likely to do when eating out?", options: ["Order salad without tomato", "Order hamburger without mayonnaise", "Substitute the drink", "Substitute the menu"], suffix: "", answer: "Substitute the menu" },
+            { text: "How do customers pick up the bill in British restaurants?", options: ["Wait until a waiter comes", "Put money on the table", "Raise a hand and wave", "Go to the cashier"], suffix: "", answer: "Put money on the table" },
+            { text: "How much should you tip a waiter in America?", options: ["Less than $10", "About 10%", "Between $15 and $20", "Between 15 and 20%"], suffix: ".", answer: "Between 15 and 20%" }
+          ]
+        }
+      ]
+    },
+    {
+      type: 'video',
+      tag: '2.10',
+      title: "Video listening: ordering in a restaurant",
+      instr: "Watch the video and try to make the same kind of dialogues.",
+      link: 'http://www.eslvideo.com/esl_video_quiz_beginning.php?id=6332',
+      linkLabel: "Watch the video (1:55) at eslvideo.com",
+      html: `<p style="margin:0 0 10px;"><b>Read the scripts of the dialogues:</b></p>`
+    },
+    {
+      type: 'bubbles',
+      title: "Dining out",
+      items: [
+        "Hi, I'm Lori, I'll be your waitress today. Can I get you anything to drink?",
+        "Just water.",
+        "Would you like bottled or regular?",
+        "Regular.",
+        "And for you?",
+        "I'll have a diet soda.",
+        "Great. I'll be right back."
+      ]
+    },
+    {
+      type: 'bubbles',
+      title: "Ordering",
+      items: [
+        "Have you decided what you'd like or do you need some more time?",
+        "I'll have the grilled chicken and a dinner salad.",
+        "And what kind of dressing would you like?",
+        "What kind do you have?",
+        "Italian, blue cheese, and French.",
+        "I'll have the Italian, and can you serve that on the side?",
+        "The Peppered Salmon, is that very spicy?",
+        "Yes.",
+        "I don't like spicy, I'll have the steak.",
+        "And how would you like that cooked?",
+        "Medium, please."
+      ]
+    },
+    {
+      type: 'bubbles',
+      title: "Serving",
+      items: [
+        "Be careful, it's hot!",
+        "Can I get that for you?",
+        "Yes, please.",
+        "And is there anything else I can get you?",
+        "May I have a steak knife?",
+        "Of course. I'll get that right away.",
+        "How is everything?",
+        "Excellent! / Very good! / Great!"
+      ]
+    },
+    {
+      type: 'bubbles',
+      title: "Finishing the meal",
+      items: [
+        "Are you still working on that or shall I wrap it up for you?",
+        "I'm done.",
+        "I'll take this to go.",
+        "Would you like a dessert menu?",
+        "Yes, please.",
+        "Would you like coffee?",
+        "Yes. &ndash; I'll have some too. &ndash; Cream or sugar? &ndash; I'd like some cream. &ndash; I'll have sugar."
+      ]
+    },
+    {
+      type: 'bubbles',
+      title: "Ordering dessert",
+      items: [
+        "Have you decided what you'd like for dessert?",
+        "I'll have the chocolate cake.",
+        "And for you?",
+        "I'll have the cheesecake.",
+        "Excellent, I'll be right back."
+      ]
+    },
+    {
+      type: 'bubbles',
+      title: "Get the check",
+      items: [
+        "Did you enjoy your meal?",
+        "It was wonderful!",
+        "Can I get you anything else, or should I get your check?",
+        "We'll take the check.",
+        "Thank you for coming."
+      ]
+    },
+    {
+      type: 'notes',
+      items: [
+        "Watch the video again and now try to make the same kinds of dialogues.",
+        "Exercise 2.11 asks you to complete the writing test of exercise 2.5 under exam conditions (30 minutes)."
+      ]
+    },
+    {
+      type: 'reading',
+      title: "Dialogue: Eating out",
+      html: `<p>It's 8pm. Mr Smith (Jack) and Mrs Smith (Jill) are celebrating their 10th wedding anniversary. They have just arrived at the restaurant.</p>
+<p><b>Mr Smith:</b> Well here we are. What do you think?<br>
+<b>Mrs Smith:</b> It's lovely Jack. Are you sure we can afford it?<br>
+<b>Mr Smith:</b> Well I may have to do some washing up, but you're worth it.</p>
+<p><i>The waiter arrives.</i></p>
+<p><b>Waiter:</b> Good evening sir, madam.<br>
+<b>Mr Smith:</b> Good evening. We have a reservation for a table for two in the name of Smith.<br>
+<b>Waiter:</b> Yes sir. May I take your coats?<br>
+<i>The waiter takes their coats and hangs them up.</i><br>
+<b>Mr &amp; Mrs Smith:</b> Thank you.<br>
+<b>Waiter:</b> You're welcome. Would you like to come to the table or would you prefer to order in the bar?<br>
+<b>Mr Smith:</b> I wouldn't mind an aperitif. We'll order in the bar.<br>
+<b>Waiter:</b> Please follow me, I'll bring you the menu in a moment.</p>
+<p><i>Mr &amp; Mrs Smith order their drinks at the bar and sit down to look at the menu.</i></p>
+<p><b>Mrs Smith:</b> Oh dear Jack, it's all in French!<br>
+<b>Mr Smith:</b> Well that's what we're paying for. Don't worry, I've got an idea.<br>
+<b>Waiter:</b> Are you ready to order sir?<br>
+<b>Mr Smith:</b> Not really. Could you recommend something?<br>
+<b>Waiter:</b> Certainly sir. The fresh lobster is particularly good this evening, and for starters may I recommend a light consomm&eacute;?<br>
+<b>Mr Smith:</b> Sounds lovely, what do you think dear?<br>
+<b>Mrs Smith:</b> Oh yes, I love lobster.<br>
+<b>Waiter:</b> So, that's two consomm&eacute;s and two lobsters. Would you like to look at the wine menu?<br>
+<b>Mr Smith:</b> Why don't you bring us what you think will go best. Nothing too expensive though.<br>
+<b>Waiter:</b> No problem sir. I'll call you as soon as your table is ready.</p>
+<p><i>The waiter walks away.</i></p>
+<p><b>Mrs Smith:</b> You are clever Jack, but what about dessert?<br>
+<b>Mr Smith:</b> Don't worry, they bring round a sweet trolley, so we just point at what we fancy!</p>
+<p><i>A while later Mr &amp; Mrs Smith have finished eating and are drinking their coffee.</i></p>
+<p><b>Waiter:</b> Was everything to your satisfaction?<br>
+<b>Mr &amp; Mrs Smith:</b> Yes, lovely thank you.<br>
+<b>Mr Smith:</b> The whole meal was delicious, our compliments to the chef. Unfortunately we have to be back for the baby-sitter so could we pay now?<br>
+<b>Waiter:</b> Certainly sir, I'll bring you the bill. Would you like me to order you a taxi?<br>
+<b>Mr Smith:</b> Yes that would be great, thank you.<br>
+<b>Mrs Smith:</b> What a nice man, we must leave him a good tip.<br>
+<b>Mr Smith:</b> Yes of course.</p>`
+    },
+    {
+      type: 'exercise',
+      exercises: [
+        {
+          type: 'choice',
+          id: 'u2ex12',
+          tag: '2.11',
+          title: "Writing test: mark the statements",
+          instr: "Read the dialogue \"Eating out\" above and mark each statement as true, false or doesn't say (not mentioned in the script).",
+          qs: [
+            { text: "It's eight o'clock in the morning.", options: ["true", "false", "doesn't say"], suffix: "", answer: "false" },
+            { text: "The Smiths are late.", options: ["true", "false", "doesn't say"], suffix: "", answer: "false" },
+            { text: "The Smiths order in the bar.", options: ["true", "false", "doesn't say"], suffix: "", answer: "true" },
+            { text: "Mr and Mrs Smith speak French.", options: ["true", "false", "doesn't say"], suffix: "", answer: "doesn't say" },
+            { text: "The restaurant is expensive.", options: ["true", "false", "doesn't say"], suffix: "", answer: "doesn't say" },
+            { text: "Jill dislikes lobster.", options: ["true", "false", "doesn't say"], suffix: "", answer: "false" },
+            { text: "They ask for the dessert menu.", options: ["true", "false", "doesn't say"], suffix: "", answer: "false" },
+            { text: "They really enjoy the meal.", options: ["true", "false", "doesn't say"], suffix: "", answer: "true" },
+            { text: "The meal costs too much.", options: ["true", "false", "doesn't say"], suffix: "", answer: "doesn't say" },
+            { text: "Mr Smith drives home.", options: ["true", "false", "doesn't say"], suffix: "", answer: "doesn't say" }
+          ]
+        },
+        {
+          type: 'cloze',
+          id: 'u2ex13',
+          tag: '2.12',
+          title: "Writing test: unscramble the words",
+          instr: "Read the descriptions and unscramble the words.",
+          lines: [
+            "1. This tells you what food you can buy in a restaurant. (UEMN) {0}",
+            "2. If you order soup, it will come in this. (OLBW) {1}",
+            "3. This is the person who brings your food to you. (TEWIRA) {2}",
+            "4. A main course usually includes some of these. (SELBATEGVE) {3}",
+            "5. You pay this before you leave a restaurant. (LIBL) {4}",
+            "6. You can book this at some restaurants. (EBTAL) {5}"
+          ],
+          answers: [
+            ["menu"], ["bowl"], ["waiter"], ["vegetables"], ["bill"], ["table"]
+          ]
+        }
+      ]
+    },
+    {
+      type: 'over2you',
+      id: 'oty-u2',
+      prompt: 'Please describe, compare and contrast the two pictures (you have 1 minute of uninterrupted preparation time and 2 minutes for speaking).',
+      questions: [
+        "Why do people like to sit in restaurants eating great food?",
+        "Do people talk louder after eating a nice meal? Why?",
+        "Is it true that all people eat at restaurants?",
+        "Why are some restaurants expensive and others not so expensive?",
+        "What kind of food do you prefer? Why?"
+      ],
+      images: [
+        { src: 'images/over-to-you-unit2-1.jpg', alt: 'An empty restaurant dining room with white tablecloths and a city view at night' },
+        { src: 'images/over-to-you-unit2-2.jpg', alt: 'An elegant restaurant where guests are dining at tables under chandeliers' }
+      ]
+    }
+  ]
+},
+/* ============================== UNIT 3 ============================== */
+{
+  id: 'u3',
+  num: 3,
+  title: "Unit 3: Services in a Bar",
+  blocks: [
+    {
+      type: 'reading',
+      title: "Alcohol and Young People",
+      html: `<p>You can be stopped, fined or arrested by police if you're under 18 and drinking alcohol in public.</p>
+<p>If you're under 18, it's against the law:</p>
+<ul>
+<li>for someone to sell you alcohol</li>
+<li>to buy or try to buy alcohol</li>
+<li>for an adult to buy or try to buy alcohol for you</li>
+<li>to drink alcohol in licensed premises (e.g. a pub or restaurant)</li>
+</ul>
+<p>However, if you're 16 or 17 and accompanied by an adult, you can drink (but not buy) beer, wine or cider with a meal. If you're 16 or under, you may be able to go to a pub (or premises primarily used to sell alcohol) if you're accompanied by an adult. However, this isn't always the case. It can also depend on the specific conditions for that premises.</p>
+<p>It's illegal to give alcohol to children under 5.</p>
+<p><strong>Working in a restaurant or bar under 18:</strong> You can serve alcohol in a restaurant if you're 16 or 17 as long as the alcohol is drunk with a meal. You can also serve alcohol in a bar, but the licence holder or bar manager needs to approve the sale. You may be restricted to selling alcohol in sealed containers (e.g. cans or bottles) in some areas.</p>`
+    },
+    {
+      type: 'terms',
+      items: [
+        "<b>fine</b> &ndash; a sum of money imposed as punishment for an offence",
+        "<b>premises</b> &ndash; the land and buildings owned by someone, especially by a company or organisation",
+        "<b>primarily</b> &ndash; essentially; mostly; chiefly; at first; originally",
+        "<b>licence</b> &ndash; an official document that gives you permission to own, do, or use something",
+        "<b>to approve</b> &ndash; to have a positive opinion of someone or something",
+        "<b>to restrict</b> &ndash; to limit the movements or actions of someone, or to limit or prevent something",
+        "<b>can</b> &ndash; a closed metal container, especially cylinder-shaped, in which some types of drink and food are sold"
+      ]
+    },
+    {
+      type: 'reading',
+      title: "A Drink at the Bar",
+      html: `<p>After a stressful day, Mr. Jackson relaxes at the bar. The bartender, Mark, responds to a few complaints while he serves Mr. Jackson his favourite cocktail.</p>
+<p><b>Bartender:</b> Excuse me, sir. Yes, what can I get you?<br>
+<b>Mr. Jackson:</b> I'd like a whiskey sour.<br>
+<b>Bartender:</b> Certainly sir, I'll get that straight away.<br>
+<b>Mr. Jackson:</b> What a day! My feet are aching! Where's an ashtray?!<br>
+<b>Bartender:</b> Here you go sir. Did you have a busy day?<br>
+<b>Mr. Jackson:</b> Yes, I had to walk all over town to get to meetings. I'm exhausted.<br>
+<b>Bartender:</b> I'm sorry to hear that, sir. Here's your drink. That should help.<br>
+<b>Mr. Jackson:</b> (takes a long sip) That's what I needed. Much better. Do you have any snacks?<br>
+<b>Bartender:</b> Certainly, here are some peanuts and some savory crackers, and a napkin.<br>
+<b>Mr. Jackson:</b> Could I have a stir stick?<br>
+<b>Bartender:</b> Coming up... Here you are.<br>
+<b>Mr. Jackson:</b> Thanks. You know, I'm sorry to say this, but these snacks are awful.<br>
+<b>Bartender:</b> I'm terribly sorry about that, sir. What seems to be the matter?<br>
+<b>Mr. Jackson:</b> The peanuts are stale!<br>
+<b>Bartender:</b> I apologize sir, I'll open a fresh can immediately.<br>
+<b>Mr. Jackson:</b> Thanks. Sorry to be in such a bad mood.<br>
+<b>Bartender:</b> That's quite alright. Can I get you another drink? This one's on the house.<br>
+<b>Mr. Jackson:</b> That's kind of you. Yes, I'll have another whiskey sour.<br>
+<b>Bartender:</b> Right away, sir. Do you have any preferences on the whiskey?<br>
+<b>Mr. Jackson:</b> Hmmm, what's that bottle over there?<br>
+<b>Bartender:</b> That's Jack Daniel's &ndash; aged 12 years.<br>
+<b>Mr. Jackson:</b> That sounds good. I'd like to smoke...<br>
+<b>Bartender:</b> Just a moment, here's an ashtray.<br>
+<b>Mr. Jackson:</b> Thanks. So how long have you worked at this bar?<br>
+<b>Bartender:</b> It's been about three years now. I love this job...</p>`
+    },
+    {
+      type: 'terms',
+      items: [
+        "<b>complaint</b> &ndash; an expression of discontent, regret, pain, censure, resentment, or grief; fault-finding",
+        "<b>ache</b> &ndash; a continuous, dull pain (in contrast to a sharp, sudden, or sporadic pain)",
+        "<b>ashtray</b> &ndash; a container for tobacco ash from smokers",
+        "<b>sip</b> &ndash; a small taste of a liquid; a small quantity taken by sipping",
+        "<b>savory</b> &ndash; having a salty, spicy, or piquant flavour; not sweet",
+        "<b>stale</b> &ndash; not fresh; flat, as beverages; dry or hardened, as bread"
+      ]
+    },
+    {
+      type: 'exercise',
+      exercises: [
+        {
+          type: 'cloze',
+          id: 'u3ex1',
+          tag: '3.1',
+          title: "Vocabulary: fill in each blank with the best word",
+          instr: "Fill in each blank with the proper (best) response from the list.",
+          bank: ["creation", "pitcher", "tap", "sure", "call", "potent", "parts", "part", "serve", "glasses", "get"],
+          lines: [
+            "1. Try this drink. It's my own {0}.",
+            "2. Buying beer by the {1} is cheaper than buying it by the glass.",
+            "3. What kind of beer do you have on {2}? (= on draught)",
+            "4. I'm not really {3} how to make that drink.",
+            "5. When the bartender says \"Last {4}!\", it means that it's the last chance for customers to order drinks before the bar closes.",
+            "6. I'm warning you. This drink is really {5}! (= strong)",
+            "7. It's two {6} orange juice and one {7} vodka.",
+            "8. I'm sorry but I can't {8} you since you're intoxicated (= drunk).",
+            "9. I've broken 5 {9} today.",
+            "10. What can I {10} you? (= What would you like?)"
+          ],
+          answers: [
+            ["creation"], ["part"], ["tap"], ["sure"], ["call"], ["potent"],
+            ["parts"], ["part"], ["serve"], ["glasses"], ["get"]
+          ]
+        },
+        {
+          type: 'cloze',
+          id: 'u3ex2',
+          tag: '3.2',
+          title: "Vocabulary: fill in the gaps with the given words",
+          instr: "Fill in each blank with the proper (best) response from the list.",
+          bank: ["allowed", "special", "mix", "round", "bottled", "cut", "be", "water", "disturb", "shooters"],
+          lines: [
+            "1. Our happy hour {0} is 2-for-1 draft/draught beer.",
+            "2. Would you like another {1} of drinks?",
+            "3. If a customer is \"{2} off\", it means that he/she is not allowed to order any more drinks (because of drunkenness, bad behaviour, etc.).",
+            "4. That'll {3} $5.50.",
+            "5. We don't have any draught beer. We only have {4} beer.",
+            "6. Shots of hard liquor (vodka, J&auml;gerermeister, etc.) are commonly referred to as {5}.",
+            "7. I would never {6} down a drink. I would lose my job if I did.",
+            "8. It's a bad idea to {7} vodka with wine.",
+            "9. Smoking is not {8} anywhere inside the bar. You'll have to go outside to smoke.",
+            "10. Sir, please don't {9} the other customers."
+          ],
+          answers: [
+            ["special"], ["round"], ["cut"], ["be"], ["bottled"], ["shooters"],
+            ["water"], ["mix"], ["allowed"], ["disturb"]
+          ]
+        },
+        {
+          type: 'choice',
+          id: 'u3ex3',
+          tag: '3.3',
+          title: "Choose the best response",
+          instr: "Choose the best response for each question.",
+          qs: [
+            { text: "Can we run a tab?", options: ["Sure, I'll start one for you", "That'll be $5, please", "No, we don't have one"], suffix: ".", answer: "Sure, I'll start one for you" },
+            { text: "What kind of beer do you have on tap?", options: ["Guinness and Kilkenny", "Bottled beer or draught beer?", "We're all out of bottled beer"], suffix: "", answer: "Guinness and Kilkenny" },
+            { text: "When's last call?", options: ["Yes, you can use our phone", "We open at 11:00 AM", "We don't close until the last customer leaves"], suffix: ".", answer: "We don't close until the last customer leaves" },
+            { text: "You got any appetizers/snacks?", options: ["Our special today is Chicken Florentine", "We've got chips, fries, and peanuts", "We have Guinness and Budweiser on tap"], suffix: ".", answer: "We've got chips, fries, and peanuts" },
+            { text: "A ... is something you put under your drink so that the table doesn't get wet.", options: ["round thing", "coast", "coaster"], suffix: "", answer: "coaster" },
+            { text: "I'll have another one!", options: ["I'm sorry, sir, but I can't serve you since you're already inebriated", "Drunk. No more", "Yes, there's another bar across the street"], suffix: ".", answer: "I'm sorry, sir, but I can't serve you since you're already inebriated" },
+            { text: "Can I smoke at the bar?", options: ["No, you're not allowed to smoke anywhere inside the club", "Thanks, but I don't smoke", "Sure, thanks"], suffix: ".", answer: "No, you're not allowed to smoke anywhere inside the club" },
+            { text: "Can I get another round?", options: ["What would you like?", "Yes, we'll move you to another table right away", "Sure. That was two Coronas and a glass of red wine, right?"], suffix: "", answer: "Sure. That was two Coronas and a glass of red wine, right?" },
+            { text: "Can I pay with my bank card?", options: ["Would you like to pay cash?", "I already gave you your bill/check", "Normally you can, but today our machine is broken"], suffix: ".", answer: "Normally you can, but today our machine is broken" },
+            { text: "You mean I can't order/have a beer?", options: ["No, we're not allowed to sell alcohol before 12:00 PM", "Last call!", "We have Becks and Carlsberg on tap"], suffix: ".", answer: "No, we're not allowed to sell alcohol before 12:00 PM" }
+          ]
+        },
+        {
+          type: 'choice',
+          id: 'u3ex4',
+          tag: '3.4',
+          title: "Choose the best response (II)",
+          instr: "Choose the best response for each question.",
+          qs: [
+            { text: "What are your drink specials today?", options: ["We've got Mojitos for $5", "I can make all kinds of special drinks", "Yup, we've got drink specials"], suffix: ".", answer: "We've got Mojitos for $5" },
+            { text: "Can we get the bill?", options: ["Would you like to pay?", "Can I put you all on one bill, or would you like separate bills?", "I'm sorry, but we only accept cash"], suffix: ".", answer: "Can I put you all on one bill, or would you like separate bills?" },
+            { text: "Why didn't the doorman let me in?", options: ["The doorman is in charge of selecting who can come in to the club and who can't", "What happened to the doorman?", "We have a very strict dress code. No tennis shoes allowed"], suffix: ".", answer: "We have a very strict dress code. No tennis shoes allowed" },
+            { text: "Is there a cover?", options: ["Yes, it's $10 per person", "There's a covered patio in the back", "You have to pay to get in to the club"], suffix: ".", answer: "Yes, it's $10 per person" },
+            { text: "Are there any other bars around here that still serve food at this hour?", options: ["We serve food until 11:00 PM. Right now our kitchen is closed", "Yes, there are many other bars in this neighborhood", "Yes, there's one just down the street"], suffix: ".", answer: "Yes, there's one just down the street" },
+            { text: "Do you serve pitchers of beer?", options: ["You'd have to check the snack menu", "No, we only sell beer by the glass/mug", "Yes, there's another bar across the street"], suffix: ".", answer: "No, we only sell beer by the glass/mug" },
+            { text: "Does the bartender make good drinks?", options: ["Yes, she does. She's one of the best bartenders in the city", "No, you have to place your drink order with me", "Thank you. I'll let her know you like them"], suffix: ".", answer: "Yes, she does. She's one of the best bartenders in the city" },
+            { text: "\"You're a *** idiot! / I'm not drunk, give me another *** drink!\"", options: ["Go now!", "Sir, you have to leave, or I'll call the police", "Outside!"], suffix: "", answer: "Sir, you have to leave, or I'll call the police" },
+            { text: "Why is the bar closing so early?", options: ["We're closing", "We usually close early on Sundays", "Thanks &ndash; here is your bill"], suffix: ".", answer: "We usually close early on Sundays" },
+            { text: "Is that guy a regular?", options: ["Yes, he's an average guy", "He always drinks beer", "Yes, he comes in every Thursday"], suffix: ".", answer: "Yes, he comes in every Thursday" }
+          ]
+        },
+        {
+          type: 'match',
+          id: 'u3ex5',
+          tag: '3.5',
+          title: "Match the words with their descriptions",
+          instr: "Match each word of the list with its description.",
+          leftLabel: "Word",
+          rightLabel: "Description",
+          pairs: [
+            { desc: "Cosmopolitan", key: "cosmo", label: "vodka, orange liqueur, cranberry juice, lime, on ice" },
+            { desc: "Pina Colada", key: "pina", label: "rum, coconut milk, pineapple juice, blended with ice" },
+            { desc: "Daiquiri", key: "daiquiri", label: "light rum, lime juice, sugar, blended with ice" },
+            { desc: "Bloody Mary", key: "bloody", label: "vodka, tomato juice, Tabasco sauce, Worcestershire sauce, salt, pepper, celery salt, sliced celery, on ice" },
+            { desc: "Margarita", key: "margarita", label: "tequila, lime, salt, blended with ice" },
+            { desc: "Tom Collins", key: "collins", label: "gin, lemon juice, sugar, soda water, on ice" },
+            { desc: "Screwdriver", key: "screwdriver", label: "vodka and orange juice, on ice" },
+            { desc: "Gin", key: "gin", label: "clear alcohol flavoured with juniper berries" },
+            { desc: "Rum", key: "rum", label: "clear alcohol made from sugar cane, origin Caribbean" },
+            { desc: "Whisky", key: "whisky", label: "light brown alcohol made from grain, origin Scotland" },
+            { desc: "Tequila", key: "tequila", label: "golden or clear alcohol, origin Mexico" },
+            { desc: "Domestic", key: "domestic", label: "beer from the country that the bar is located in" },
+            { desc: "Ciders", key: "ciders", label: "alcoholic drink from apples or other fruit" },
+            { desc: "Draft", key: "draft", label: "beer on tap" },
+            { desc: "Cans", key: "cans", label: "beer served in a tin" },
+            { desc: "Keg", key: "keg", label: "beer in a large barrel" },
+            { desc: "Pint glass", key: "pint", label: "12 oz glass for draft" },
+            { desc: "Mug", key: "mug", label: "a cup or glass with a handle used for hot beverages" },
+            { desc: "Pitcher / jug", key: "pitcher", label: "approximately 60 oz container for draft or water" }
+          ]
+        },
+        {
+          type: 'cloze',
+          id: 'u3ex6',
+          tag: '3.6',
+          title: "Use of English: adverbs",
+          instr: "Put the following adverbs in the right spaces. <a href='https://www.usinggrammar.com/english-grammar/adverbs.php' target='_blank' rel='noopener'>Useful grammar link</a>",
+          bank: ["badly", "carefully", "easily", "fast", "hard", "quietly", "slowly", "well"],
+          lines: [
+            "1. My sister passed the exam {0}.",
+            "2. He drives too {1}. He's going to have a bad accident soon.",
+            "3. Read the question {2} before you write your answer.",
+            "4. Did you sleep {3} last night?",
+            "5. I worked very {4} today &ndash; I'm tired.",
+            "6. I don't understand. Can you speak more {5}, please?",
+            "7. I did really {6} in the test. It was a disaster.",
+            "8. Sssh! Speak {7}. The baby's asleep."
+          ],
+          answers: [
+            ["well"], ["fast"], ["carefully"], ["well"], ["hard"], ["slowly"], ["badly"], ["quietly"]
+          ]
+        },
+        {
+          type: 'choice',
+          id: 'u3ex7',
+          tag: '3.7',
+          title: "Use of English: \"good\" or \"well\"",
+          instr: "Put \"good\" or \"well\" in the spaces. <a href='https://www.grammarly.com/blog/good-well/' target='_blank' rel='noopener'>Useful grammar link</a>",
+          qs: [
+            { text: "Eat vegetables. They're ... for you.", options: ["good", "well"], suffix: "", answer: "good" },
+            { text: "My father speaks English very ....", options: ["good", "well"], suffix: "", answer: "well" },
+            { text: "I'm not a very ... swimmer.", options: ["good", "well"], suffix: "", answer: "good" },
+            { text: "I can't sing very ....", options: ["good", "well"], suffix: "", answer: "well" },
+            { text: "Is your new job going ...?", options: ["good", "well"], suffix: "", answer: "well" },
+            { text: "I didn't do very ... in the test.", options: ["good", "well"], suffix: "", answer: "well" },
+            { text: "Hello! It's really ... to see you!", options: ["good", "well"], suffix: "", answer: "good" },
+            { text: "I didn't like the restaurant. The food wasn't very ....", options: ["good", "well"], suffix: "", answer: "good" },
+            { text: "It's a great restaurant. You can eat very ... there.", options: ["good", "well"], suffix: "", answer: "well" },
+            { text: "A: \"I've got a new job!\" B: \"That's .... Congratulations!\"", options: ["good", "well"], suffix: ".", answer: "good" }
+          ]
+        },
+        {
+          type: 'cloze',
+          id: 'u3ex8',
+          tag: '3.8',
+          title: "Use of English: active or passive form",
+          instr: "Make the correct active or passive form of the verb in brackets. <a href='https://learnenglish.britishcouncil.org/grammar/english-grammar-reference/active-passive-voice' target='_blank' rel='noopener'>Useful grammar link</a>",
+          lines: [
+            "A bar is a business that {0} (sell) alcoholic beverages for immediate consumption. It {1} (believe) that {2} (be) no important difference between bars, pubs, and taverns. Bars that {3} (be) part of hotels may be known in some areas as long bars or hotel lounges. The term \"bar\" {4} (derive) from the counter over which drinks {5} (serve). The \"back bar\" or \"shelves\" {6} (be) a set of shelves of glasses and bottles behind the counter. Frequently when food {7} (serve) elsewhere in the bar, it may also be ordered and eaten at the bar. Tending a bar {8} (require) special skills, for example learning special recipes, measuring, mixing and serving drinks, and chatting with guests. No matter which country you {9} (work) in, you {10} (be) sure {11} (come) across English clients who {12} (want) a cold drink."
+          ],
+          answers: [
+            ["sold"], ["believed"], ["is"], ["are"], ["derived"], ["are served"], ["is"],
+            ["is served"], ["requires"], ["work"], ["are"], ["will come"], ["want"]
+          ]
+        },
+        {
+          type: 'open',
+          id: 'u3ex9',
+          tag: '3.9',
+          title: "Reading: answer the questions about \"Alcohol and Young People\"",
+          instr: "Answer the questions according to the text. Write your answer in the box, then check the sample answer.",
+          qs: [
+            { q: "1. You and your friend are both 17 and you go to a pizzeria. Can you have a glass of wine with the pizza?", model: "Yes, you can drink (but not buy) beer, wine or cider with a meal, because you are accompanied by an adult." },
+            { q: "2. Can a 17-year-old person go alone to a pub?", model: "No. A person under 18 must be accompanied by an adult in premises that are used mainly for selling alcohol." },
+            { q: "3. Can a 17-year-old person sell and serve alcohol in a nightclub?", model: "No. A person under 18 cannot be employed to sell alcohol in a bar, because the sale needs the approval of the licence holder or the bar manager." },
+            { q: "4. Can you sell beer in bottles everywhere in the UK if you're under 18?", model: "No. It is against the law for someone to sell alcohol to a person under 18, and in some areas you may only sell alcohol in sealed containers." },
+            { q: "5. What are the rules of buying and selling alcohol in your country?", model: "Your own answer. Compare it with the rules in the UK: under 18 you cannot buy, be sold or drink alcohol in public." }
+          ]
+        },
+        {
+          type: 'choice',
+          id: 'u3ex10',
+          tag: '3.10',
+          title: "Reading: choose the correct answer to \"A Drink at the Bar\"",
+          instr: "Choose the correct answer to these questions based on the dialogue. Each question has only one correct answer.",
+          qs: [
+            { text: "What kind of day has it been for Mr Jackson?", options: ["A relaxing day", "A holiday", "A stressful day"], suffix: ".", answer: "A stressful day" },
+            { text: "What's Mr Jackson's first complaint?", options: ["About his aching feet", "About the bartender taking so long", "About his whiskey sour"], suffix: ".", answer: "About his aching feet" },
+            { text: "Which drink does Mr Jackson order?", options: ["A beer", "A whisky sour", "A glass of wine"], suffix: ".", answer: "A whisky sour" },
+            { text: "What does Mr Jackson need?", options: ["An ashtray", "A towel", "A cigarette lighter"], suffix: ".", answer: "An ashtray" },
+            { text: "Why are Mr Jackson's feet aching?", options: ["He's been walking around town to get to meetings", "He's been working out at the gym", "He's been shopping"], suffix: ".", answer: "He's been walking around town to get to meetings" },
+            { text: "What kind of snacks does the bartender have?", options: ["Mini pizzas", "Nuts and crackers", "Olives"], suffix: ".", answer: "Nuts and crackers" },
+            { text: "What does Mr Jackson ask for with his drink?", options: ["A shot glass", "A stirrer", "A napkin"], suffix: ".", answer: "A stirrer" },
+            { text: "What does Mr Jackson complain about?", options: ["The stale peanuts", "The spicy peanuts", "The tasty peanuts"], suffix: ".", answer: "The stale peanuts" },
+            { text: "What does the bartender offer to keep Mr Jackson happy?", options: ["A small sandwich", "A handshake", "A drink on the house"], suffix: ".", answer: "A drink on the house" },
+            { text: "Which type of whisky would Mr Jackson like in his drink?", options: ["Smithson", "Old Kentucky", "Jack Daniel's"], suffix: ".", answer: "Jack Daniel's" }
+          ]
+        }
+      ]
+    },
+    {
+      type: 'video',
+      tag: '3.11',
+      title: "Video listening: how to order a drink",
+      instr: "Watch the video, read the dialogues, look through the useful expressions and act out a dialogue in pairs.",
+      src: 'https://www.youtube.com/embed/_XdivXRJeH0',
+      videoTitle: "How to order a drink (3:33)",
+      html: `<p style="margin:0 0 10px;"><b>Useful situations:</b></p>
+<ul style="margin:0 0 10px; padding-left:20px; line-height:1.9;">
+<li><b>Situation 1:</b> What can I get ya / get you? Can I get a beer? / I'll take a beer. / I'll have a beer. Bottle or draft?</li>
+<li><b>Situation 2:</b> To drink &ndash; whiskey. OK! Cocktail or shot? Neat or on the rocks? What does it mean? Ice or no ice?</li>
+<li><b>Situation 3:</b> Do you take card? Yeah. Keep it open? Yes.</li>
+</ul>`
+    },
+    {
+      type: 'exercise',
+      exercises: [
+        {
+          type: 'match',
+          id: 'u3ex11a',
+          tag: '3.11 a',
+          title: "Idioms and expressions",
+          instr: "Read the example sentences and match the words and phrases with their meanings.",
+          leftLabel: "Phrase",
+          rightLabel: "Meaning",
+          pairs: [
+            { desc: "On draught (BrE) / draft (AmE)", key: "draught", label: "(of beer) taken from a large container (= a barrel)" },
+            { desc: "Draught beer (BrE) / draft beer (AmE)", key: "draughtbeer", label: "beer that is stored in and served from a large container, usually a barrel" },
+            { desc: "a shot", key: "shot", label: "a small amount of a drink, especially a strong alcoholic one" },
+            { desc: "on the rocks", key: "rocks", label: "served with pieces of ice but no water" },
+            { desc: "neat", key: "neat", label: "not mixed with water or anything else" },
+            { desc: "tab", key: "tab", label: "a bill for goods you receive but pay for later, especially for food or drinks in a restaurant or bar" },
+            { desc: "pick up the bill, tab, etc.", key: "pickup", label: "(informal) to pay for something" }
+          ]
+        },
+        {
+          type: 'match',
+          id: 'u3ex11b',
+          tag: '3.11 b',
+          title: "Before watching: match the words to their definitions",
+          instr: "Match each word with its definition before you watch the video.",
+          leftLabel: "Word",
+          rightLabel: "Definition",
+          pairs: [
+            { desc: "buy a round", key: "round", label: "to buy drinks for a group of people" },
+            { desc: "persistence", key: "persistence", label: "not giving up, continuing to do something in a determined way" },
+            { desc: "pint", key: "pint", label: "a measurement of liquid, about half a litre (568 ml)" },
+            { desc: "lager", key: "lager", label: "a refreshing pale-coloured beer (golden) with bubbles" },
+            { desc: "bitter", key: "bitter", label: "a delicious darker beer (copper-coloured), without bubbles" },
+            { desc: "stout", key: "stout", label: "a very dark beer (black) with a thick creamy head (layer of foam that sits on top of the beer)" }
+          ]
+        }
+      ]
+    },
+    {
+      type: 'video',
+      tag: '3.12',
+      title: "Listening activities",
+      instr: "Listen to the podcast and mark the sentences true or false according to the text.",
+      link: 'http://learnenglish.britishcouncil.org/en/elementary-podcasts/series-04-episode-09',
+      linkLabel: "Listen to the podcast (4:20&ndash;8:30) at the British Council",
+      html: ''
+    },
+    {
+      type: 'exercise',
+      exercises: [
+        {
+          type: 'choice',
+          id: 'u3ex12a',
+          tag: '3.12 a',
+          title: "True or false",
+          instr: "Listen to the text and mark the sentences true or false.",
+          qs: [
+            { text: "Tess doesn't like alcohol.", options: ["true", "false"], suffix: "", answer: "false" },
+            { text: "Ravi drinks beer.", options: ["true", "false"], suffix: "", answer: "true" },
+            { text: "There are lots of different kinds of British beer.", options: ["true", "false"], suffix: "", answer: "true" },
+            { text: "The British drink a lot of alcohol.", options: ["true", "false"], suffix: "", answer: "true" },
+            { text: "British pubs are family places.", options: ["true", "false"], suffix: "", answer: "false" },
+            { text: "British pubs are different from bars and cafes in other countries.", options: ["true", "false"], suffix: "", answer: "true" },
+            { text: "Tess never goes to pubs.", options: ["true", "false"], suffix: "", answer: "false" },
+            { text: "Tess and Ravi think the British drink more than other nationalities.", options: ["true", "false"], suffix: "", answer: "true" }
+          ]
+        },
+        {
+          type: 'match',
+          id: 'u3ex12b',
+          tag: '3.12 b',
+          title: "Match the words from the podcast to the definitions",
+          instr: "Listen to the podcast again and match the words from the podcast to the definitions.",
+          leftLabel: "Definition",
+          rightLabel: "Word",
+          pairs: [
+            { desc: "A place where they make beer", key: "brewery", label: "a brewery" },
+            { desc: "A type of beer which has a golden colour, popular all over the world", key: "lager", label: "lager" },
+            { desc: "A type of beer which has a dark brown colour, popular in Britain", key: "bitter", label: "bitter" },
+            { desc: "A typical British place where you can drink alcohol", key: "pub", label: "a pub" },
+            { desc: "A drink that doesn't contain any alcohol, like cola or juice", key: "softdrink", label: "a soft drink" }
+          ]
+        },
+        {
+          type: 'cloze',
+          id: 'u3ex13',
+          tag: '3.13',
+          title: "Writing test: match the bar equipment to the pictures",
+          instr: "Write the name of the bar equipment under each picture.",
+          bank: ["Jigger", "Julep glass", "Cobbler shaker", "Highball / Collins", "Muddler", "Hurricane glass", "Coupette", "Mason jar"],
+          lines: [],
+          images: [
+            { src: 'images/ex-3-13-a.jpg', alt: 'Picture a: a tall straight highball glass' },
+            { src: 'images/ex-3-13-b.jpg', alt: 'Picture b: a jigger for measuring liquor' },
+            { src: 'images/ex-3-13-c.jpg', alt: 'Picture c: a metal julep glass filled with ice and mint' },
+            { src: 'images/ex-3-13-d.jpg', alt: 'Picture d: a wooden muddler' },
+            { src: 'images/ex-3-13-e.jpg', alt: 'Picture e: a cobbler shaker with its cap and strainer' },
+            { src: 'images/ex-3-13-f.jpg', alt: 'Picture f: a mason jar with a drink' },
+            { src: 'images/ex-3-13-g.jpg', alt: 'Picture g: a tall hurricane glass' },
+            { src: 'images/ex-3-13-h.jpg', alt: 'Picture h: a coupette glass' }
+          ],
+          answers: [
+            ["highball", "highball / collins", "collins", "highball/collins"],
+            ["jigger"],
+            ["julep glass", "julep"],
+            ["muddler"],
+            ["cobbler shaker", "cobbler"],
+            ["mason jar", "mason"],
+            ["hurricane glass", "hurricane"],
+            ["coupette", "coupe"]
+          ]
+        },
+        {
+          type: 'cloze',
+          id: 'u3ex14',
+          tag: '3.14',
+          title: "Writing test: insert the words into the sentences",
+          instr: "Insert each of the following words into the right sentence.",
+          bank: ["part", "on tap", "allowed", "serve", "until", "make", "call", "mix", "disturb", "special", "parts", "get", "have/get", "kitchen"],
+          lines: [
+            "1. What kind of beer do you have on {0}? (= on draught)",
+            "2. When the bartender says \"Last {1}!\", it means that it's the last chance for customers to order drinks before the bar closes.",
+            "3. It's two {2} orange juice and one {3} vodka.",
+            "4. What can I {4} you? (= What would you like?)",
+            "5. Our happy hour {5} is 2-for-1 draft/draught beer.",
+            "6. That'll {6} $5.50.",
+            "7. It's a bad idea to {7} vodka with wine.",
+            "8. Smoking is not {8} anywhere inside the bar. You'll have to go outside to smoke.",
+            "9. Sir, please don't {9} the other customers.",
+            "10. Can we {10} the bill?",
+            "11. Are there any other bars around here that still {11} food at this hour?",
+            "12. We serve food {12} 11:00 PM. Right now our {13} is closed."
+          ],
+          answers: [
+            ["tap"], ["call"], ["parts"], ["part"], ["get"], ["special"], ["be"], ["mix"],
+            ["allowed"], ["disturb"], ["have", "get"], ["serve"], ["until"], ["kitchen"]
+          ]
+        },
+        {
+          type: 'match',
+          id: 'u3ex15',
+          tag: '3.15',
+          title: "Writing test: match the cocktails to the glassware",
+          instr: "Match each group of cocktails with the glassware that is usually used for it.",
+          leftLabel: "Cocktails",
+          rightLabel: "Glassware",
+          pairs: [
+            { desc: "Cuba libre, Tequila sunrise, Bloody Mary", key: "g1", label: "Collins / Highball" },
+            { desc: "Gibson, Manhattan, Alexander", key: "g2", label: "Martini glass" },
+            { desc: "Negroni, Godfather, Black Russian", key: "g3", label: "Old fashioned / Rocks" },
+            { desc: "Daiquiri, White Lady", key: "g4", label: "Coupette" },
+            { desc: "Pina Colada, Chi Chi", key: "g5", label: "Hurricane glass" },
+            { desc: "Pina Colada, Sex on the Beach, Blue Lagoon", key: "g6", label: "Poco grande" }
+          ]
+        }
+      ]
+    },
+    {
+      type: 'over2you',
+      id: 'oty-u3',
+      prompt: 'Conversation questions (15 min.) &ndash; describe, compare and contrast the two pictures, then answer the questions.',
+      questions: [
+        "Do you often visit a bar? Explain, please.",
+        "What is your favourite drink? What is it made of?",
+        "Are you a good listener? Explain, please.",
+        "Would you like to work in a bar? Explain, please."
+      ],
+      images: [
+        { src: 'images/over-to-you-unit3-1.jpg', alt: 'Customers sitting at the counter of an ice cream bar' },
+        { src: 'images/over-to-you-unit3-2.jpg', alt: 'A busy pub where people are drinking beer at the bar' }
+      ],
+      extra: "Choose two non-alcoholic cocktails and prepare a presentation for the other group members. Don't forget: the name of the cocktail; the recipe (ingredients and amounts); how to prepare it."
+    }
+  ]
+},
+/* ============================ GLOSSARY ============================== */
+{
+  id: 'gl',
+  num: 4,
+  kicker: "Reference",
+  title: "Glossary and Useful Phrases",
+  blocks: [
+    {
+      type: 'p',
+      html: 'Use this glossary to check the professional words of every unit. The Polish translation is given in the middle column &ndash; cover it with your hand while you work and check yourself afterwards.'
+    },
+    {
+      type: 'reading',
+      title: "Unit 1 &ndash; Services in a cafe",
+      html: ''
+    },
+    {
+      type: 'reftable',
+      headers: ["Term", "Translation", "Meaning"],
+      cls: 'glossary-table',
+      rows: [
+        ["American roast", "palenie amerykańskie", "a medium-brown coffee roast, also known as \"City Roast\"; traditionally preferred in the U.S."],
+        ["black coffee", "kawa czarna", "coffee served without cream or milk"],
+        ["cafe", "kawiarnia", "a coffee shop or a small restaurant where coffee is served"],
+        ["cafeteria", "kawiarnia samoobsługowa", "a restaurant where you serve yourself, then pay a cashier"],
+        ["caffeine", "kofeina", "a chemical, found in coffee, that stimulates the central nervous system and body metabolism"],
+        ["cherry", "owoc kawy (wiśnia kawowa)", "the fruit of the coffee tree; each cherry contains two coffee beans or one \"peaberry\""],
+        ["coffee beans", "ziarna kawy", "the seed of the coffee plant, picked, processed, and dried once ripe"],
+        ["dark roast", "palenie ciemne", "coffee beans roasted to a medium-dark colour and beyond; coffee oils appear on the surface"],
+        ["decaffeinated coffee", "kawa bezkofeinowa", "coffee that has undergone a process to remove caffeine from the beans"],
+        ["drip coffee", "kawa przelewana (filtrowana)", "also called filtered coffee; made by pouring water over roasted, ground coffee beans in a filter"],
+        ["espresso", "espresso", "strong, dark coffee made by forcing a small amount of nearly boiling water under pressure through finely ground coffee"],
+        ["flat white", "flat white", "a coffee beverage made by pouring microfoam over a single or double shot of espresso"],
+        ["green coffee", "kawa zielona (surowa)", "unroasted coffee beans"],
+        ["instant coffee", "kawa rozpuszczalna (instant)", "coffee dried into soluble powder or freeze-dried into granules that dissolve in hot water"],
+        ["Italian roast", "palenie włoskie", "a very dark roast, rich and bittersweet in flavour"],
+        ["latte", "latte", "a coffee drink made with espresso and steamed milk"],
+        ["long black", "long black", "a double shot of espresso poured over hot water"],
+        ["roasted beans", "ziarna prażone", "beans that have been roasted to get the right flavour before they are ground and brewed"],
+        ["robusta", "robusta", "a low-growing, high-yield coffee tree; full-bodied but bland coffee of inferior quality, used in cheap blends and instant coffee"],
+        ["single-origin coffee", "kawa jednego pochodzenia", "unblended coffee from a single country, region, and crop"],
+        ["skinny coffee", "kawa z odtłuszczonym mlekiem", "coffee with skimmed milk"],
+        ["white coffee", "kawa z mlekiem", "regular black coffee with milk, cream or another \"whitener\" added"],
+        ["Arabica", "arabika", "the earliest cultivated species of coffee tree; about 70% of the world's coffee; superior in cup quality"],
+        ["barista", "barista", "a person who makes coffee drinks as a profession"],
+        ["brew", "parzyć, zaparzać", "to make coffee by pouring hot water over ground coffee beans"],
+        ["caffeine", "kofeina", "the chemical in coffee that gives you energy and keeps you awake"],
+        ["crema", "crema (pianka espresso)", "the caramel-coloured foam that appears on top of a shot of espresso during brewing"],
+        ["cappuccino", "cappuccino", "an Italian coffee drink traditionally prepared with espresso, hot milk and steamed milk foam"],
+        ["French press", "french press (kawiarka przelewowa)", "a device for making coffee in which ground coffee is steeped in water and pressed to the bottom with a filter plunger"],
+        ["roast", "prażyć, palić (ziarna kawy)", "to cook beans without water, usually in a hot oven, until they turn brown"]
+      ]
+    },
+    {
+      type: 'reading',
+      title: "Unit 2 &ndash; Services in a restaurant",
+      html: ''
+    },
+    {
+      type: 'reftable',
+      headers: ["Term", "Translation", "Meaning"],
+      cls: 'glossary-table',
+      rows: [
+        ["&agrave; la carte", "à la carte", "(of a menu) having dishes listed separately and individually priced"],
+        ["appetizer", "przystawka", "a small snack before a meal"],
+        ["beverage", "napój", "any drink, especially one other than water, such as tea, coffee, beer, or milk"],
+        ["bill, cheque, check", "rachunek", "the slip of paper that tells the customer how much to pay"],
+        ["bread basket", "koszyczek z pieczywem", "slices of bread and butter served before and with a meal"],
+        ["buffet", "bufet (szwedski stół)", "self-serve tables of food set out for customers to pick from"],
+        ["chef", "szef kuchni", "a staff member professionally trained to prepare food"],
+        ["complaint", "skarga, reklamacja", "an expression of discontent, regret, or fault-finding"],
+        ["complimentary", "bezpłatny (gratis)", "given or supplied without charge"],
+        ["counter", "lada", "a flat area for placing dishes on or preparing food"],
+        ["course", "danie", "one part of a meal"],
+        ["cuisine", "kuchnia (np. francuska)", "a country or region's style of cooking"],
+        ["dessert", "deser", "cake, pie, fruit, pudding, ice cream, etc., served as the final course of a meal"],
+        ["eat out", "jść na mieście, w restauracji", "(phrasal verb) to go out to a restaurant, especially at night"],
+        ["fast food", "fast food (szybkie jedzenie)", "quickly prepared food such as hamburgers and French fries"],
+        ["hors d'oeuvre", "przystawka", "a savoury food served as an appetizer before the main dish"],
+        ["ingredients", "składniki", "all the different foods that are combined in a recipe"],
+        ["make a booking / book a table", "zarezerwować stolik", "to contact a restaurant and reserve a table for a meal"],
+        ["menu", "menu", "the list of foods and drinks served in a restaurant, cafe, hotel, etc."],
+        ["non-alcoholic beverage", "napój bezalkoholowy", "a drink that resembles an alcoholic drink but has no alcohol"],
+        ["pack up", "pakować (zamówienie na wynos)", "(verb) to put food in a take-out container for the customer to take home"],
+        ["pasta", "pasta", "Italian food made from flour and water, such as spaghetti, ravioli, lasagne"],
+        ["portion", "porcja", "a separate amount of food"],
+        ["pudding", "pudding, deser", "a soft, sweet food eaten as a dessert"],
+        ["recipe", "przepis", "a list of ingredients and instructions for preparing a certain type of food"],
+        ["regulars", "stali bywalcy", "people who come into an establishment often"],
+        ["reservation", "rezerwacja", "a request to have a table saved for a certain number of people"],
+        ["restaurant", "restauracja", "a place with a kitchen and dining area where people pay to eat meals"],
+        ["sauce", "sos", "a liquid flavouring added to food"],
+        ["savoury", "słony, pikantny", "(of food) salty or spicy rather than sweet"],
+        ["service charge", "opłata serwisowa", "an extra amount added to a restaurant bill, meant to be given to staff for their service"],
+        ["set menu", "menu zestawowe", "a multi-course meal sold for a fixed price"],
+        ["side dish", "dodatek", "an extra dish or serving ordered together with a main dish"],
+        ["specialty", "specjalność danego miejsca", "a food item that a restaurant is popular for"],
+        ["tip (noun)", "napiwek", "extra money given by a guest to a waiter or other staff member"],
+        ["vegetarian", "wegetariański", "(of dishes or diets) not including animal products, especially meat"],
+        ["waiter / waitress", "kelner / kelnerka", "a person who takes orders from guests and brings their food"],
+        ["take-out", "na wynos", "food that is packed up to be eaten at home"],
+        ["wine list", "karta win", "a printed list of all the wines available in a restaurant"]
+      ]
+    },
+    {
+      type: 'reading',
+      title: "Unit 3 &ndash; Services in a bar",
+      html: ''
+    },
+    {
+      type: 'reftable',
+      headers: ["Term", "Translation", "Meaning"],
+      cls: 'glossary-table',
+      rows: [
+        ["allowed", "dozwolony", "permitted"],
+        ["bartender", "barman, barmanka", "someone who makes and serves drinks in a bar"],
+        ["bar spoon", "łyżka barowa", "a long-handled spoon for stirring drinks"],
+        ["(beer) on tap", "(piwo) z beczki, na kran", "ready to be drawn and served from a barrel"],
+        ["bill", "rachunek", "an itemised statement of fees or charges"],
+        ["blender", "blender (mikser)", "an electric appliance with blades that mix, chop, or puree food and drinks"],
+        ["bottled", "w butelce, butelkowany", "put into a bottle"],
+        ["cheers!", "na zdrowie!", "a friendly expression said before drinking an alcoholic drink"],
+        ["coaster", "podkładka pod kieliszek", "a small piece of material that you put a glass or cup on to protect a surface"],
+        ["cobbler shaker", "shaker cobbler (trójkolbowy)", "an all-in-one cocktail shaker of three parts: a metal tin, a cap, and a built-in strainer"],
+        ["cocktail straw", "słomka do koktajli", "a long, slim straw used for sipping and stirring cocktails and other drinks"],
+        ["coffee machine", "ekspres, maszyna do kawy", "a small electric machine that makes coffee; a coffeemaker"],
+        ["corkcrew", "korkociąg", "a tool with a pointed metal helix that is screwed into a cork and pulled to extract it from a bottle"],
+        ["coupette", "kieliszek typu coupe", "a small coupe glass used for serving cold seafood, fruit, or ices"],
+        ["domestic", "krajowy (piwo)", "(of beer) made in the country where the bar is located"],
+        ["draught beer (BrE) / draft beer (AmE)", "piwo z beczki, piwo draft", "beer drawn from a keg"],
+        ["highball / Collins", "szklanka highball (Collins)", "a tall glass used to serve mixed drinks such as a tequila sunrise or a Long Island iced tea"],
+        ["hurricane glass", "szklanka hurricane", "a tall drinking glass used to serve mixed drinks, particularly the Hurricane"],
+        ["ice bucket", "wiaderko na lód", "a container for ice, often with tongs and a strainer, used when serving at the table"],
+        ["ingredients", "składniki", "foods used with other foods in the preparation of a particular dish or drink"],
+        ["jigger", "miarka barowa (jigger)", "a measure for liquor, usually 1&ndash;2 oz (30&ndash;60 ml), with a large side and a small side"],
+        ["lager", "lager", "a beer brewed by slow fermentation and matured under refrigeration"],
+        ["last orders (BrE) / last call (AmE)", "ostatnie zamówienie, ostatnia szansa", "the last drinks customers may buy before the bar closes"],
+        ["martini glass", "kieliszek do martini", "a stemmed glass with an inverted cone bowl, used for martinis and many other cocktails"],
+        ["mason jar", "słoik mason", "a glass jar used in home canning, also used as a drinking glass"],
+        ["muddler", "ubijak, tłuczek do koktajli", "a tool used to mash fruit, herbs, and spices in the bottom of a glass to release their flavour"],
+        ["mug", "kubek", "a heavy glass with a handle, out of which you drink beer"],
+        ["neat", "czysta (bez wody i lodu)", "not diluted or mixed with other substances"],
+        ["on the rocks", "z lodem, na lodzie", "served with ice cubes"],
+        ["pitcher", "dzban, karafka", "a container with a handle and a lip for pouring liquids (BrE: jug)"],
+        ["potent", "mocna (wódka)", "very powerful, forceful, or effective"],
+        ["pour", "nalewać", "to make a liquid flow out of a container, especially into another"],
+        ["recipe", "przepis", "a set of instructions for preparing and cooking food, including a list of ingredients"],
+        ["refreshing", "orzeźwiający", "making you feel less hot or tired"],
+        ["run a tab", "zapisać na konto", "to accumulate charges on a bill at a bar or tavern"],
+        ["serve", "podawać, obsługiwać", "to offer or set food or drink before a person"],
+        ["shot", "shot (mała porcja wódki)", "a small amount of an alcoholic drink"],
+        ["shot glass", "kieliszek do shotów", "a tiny glass for drinking a spirit in one gulp; can double as a jigger"],
+        ["soft drink", "napój bezalkoholowy", "a cold, usually sweet, drink that does not contain alcohol"],
+        ["strainer", "sitko, sito", "a kitchen utensil with holes for separating liquid from solids"],
+        ["tab", "konto (w barze)", "a bill or check, such as for a meal in a restaurant"],
+        ["tongs", "szczypce (do lodu, sałaty)", "a device with two long pieces joined at one end, pressed together at the other end to hold an object"]
+      ]
+    },
+    {
+      type: 'reading',
+      title: "Useful phrases: taking a reservation, receiving the diner and taking an order",
+      html: `<p><b>Taking a reservation</b></p>
+<ul>
+<li>For what time? / For how many? / Who's the reservation for?</li>
+<li>I'm sorry, we're not open on (day). / We (open, close) at (time). / We're open until (time).</li>
+<li>I'm sorry, there aren't any tables left for (time), but we can give you a table at (time).</li>
+<li>I'm sorry, the restaurant's full.</li>
+</ul>
+<p><b>Receiving the diner</b></p>
+<ul>
+<li>Have you got a reservation?</li>
+<li>Would you like to (could you) come with me, please? / Would you like to (could you) follow me, please?</li>
+<li>Will this table be all right?</li>
+<li>Would you like to (prefer, rather) sit (near the window)?</li>
+<li>I'm sorry, that (this) table is already reserved.</li>
+<li>I'll bring you (the menu). / Your table's ready now.</li>
+<li>You can (sit, have a drink, wait) in the bar if you like and we'll call you when we have a table.</li>
+<li>I'm sorry, the restaurant is full now. We can (might be able to) seat you in (time).</li>
+</ul>
+<p><b>Taking an order</b></p>
+<ul>
+<li>Are you ready to order? / Would you like to order now? / Have you (decided, chosen) what you'd like?</li>
+<li>What would you like (to have, to drink)? / Would you (like, care for) (a, some) &hellip; before (dinner, lunch)?</li>
+<li>Would you like something to drink? / What kind of (food, beverage) would you like?</li>
+<li>What would you like with that?</li>
+<li>(Today) we've got &hellip; / Today's special is &hellip;</li>
+<li>There's a choice of &hellip; / (Everything's) &agrave; la carte. / We've got (there's) a set menu.</li>
+<li>You can choose from the &hellip; / We have a buffet.</li>
+<li>How would you like (that, it, them)? / How would you like (that, it, them) (prepared, done)?</li>
+<li>Is everything (satisfactory, all right)? / Would you like anything else? / Will that be all?</li>
+</ul>
+<p><b>Paying the bill</b></p>
+<ul>
+<li>to pay in cash / to pay by credit card</li>
+<li>Credit cards are not accepted. / We can take a cheque with a banker's card.</li>
+<li>Do you want it all on the same bill or do you want to pay separately?</li>
+<li>There is a cover charge. / Service is included.</li>
+</ul>`
+    },
+    {
+      type: 'reading',
+      title: "Useful phrases: at the bar",
+      html: `<p><b>Ordering drinks</b></p>
+<ul>
+<li>What would you like to drink? / What are you having? / What can I get you?</li>
+<li>I'll have &hellip;, please &ndash; a pint of lager / a pint of bitter / a glass of white wine / a glass of red wine</li>
+<li>an orange juice / a coffee / a Coke / a Diet Coke</li>
+<li>Large or small? / Would you like ice with that? / No ice, please / A little, please / Lots of ice, please</li>
+<li>A beer, please / Two beers, please / Three shots of tequila, please</li>
+<li>Are you being served? / I'm being served, thanks / Who's next?</li>
+<li>Which wine would you like? / House wine is fine / Which beer would you like?</li>
+<li>Would you like draught or bottled beer?</li>
+<li>I'll have the same, please / Nothing for me, thanks / Keep the change!</li>
+<li>Whose round is it? / It's my round / It's your round</li>
+<li>Another beer, please / Another two beers, please / Same again, please</li>
+</ul>
+<p><b>Ordering snacks and food</b></p>
+<ul>
+<li>Do you have any snacks? / Do you have any sandwiches? / Do you serve food?</li>
+<li>What time does the kitchen close? / Are you still serving food?</li>
+<li>A packet of crisps, please. What flavour would you like?</li>
+<li>Ready salted / Cheese and onion / Salt and vinegar</li>
+<li>What sort of sandwiches do you have? / Do you have any hot food?</li>
+<li>What can I get you? / Would you like anything to eat?</li>
+<li>Could we see a menu, please? / Eat in or take-away?</li>
+</ul>
+<p><b>Bar games and other services</b></p>
+<ul>
+<li>Does anyone fancy a game of &hellip;? &ndash; pool / darts / cards</li>
+<li>Do you have internet access here? / Do you have wireless internet here?</li>
+<li>What's the password for the internet?</li>
+</ul>`
+    }
+  ]
+}
+];
+
+function videoCardHtml(b){
+  let h = '<div class="video-card"><h3><span class="exercise-num">'+b.tag+'</span>'+b.title+'</h3>' +
+          '<p class="instructions">'+b.instr+'</p>';
+  if(b.src){
+    h += '<div class="video-frame"><iframe loading="lazy" src="'+b.src+'" title="'+b.videoTitle+'" ' +
+         'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>';
+  }
+  if(b.link){
+    h += '<p class="video-link"><a class="btn secondary" href="'+b.link+'" target="_blank" rel="noopener">'+b.linkLabel+'</a></p>';
+  }
+  if(b.html){ h += '<div class="reading-text">'+b.html+'</div>'; }
+  return h + '</div>';
+}
+
+function renderExercise(ex){
+  const exDiv = document.createElement('div'); exDiv.className='exercise'; exDiv.id=ex.id;
+  let controls = '';
+  if(ex.type==='cloze'){
+    controls = '<button class="btn" onclick="checkExercise(\''+ex.id+'\')">Check answers</button> <button class="btn secondary" onclick="revealExercise(\''+ex.id+'\')">Reveal answers</button> <button class="btn secondary" onclick="resetExercise(\''+ex.id+'\')">Reset</button> <span class="score" id="'+ex.id+'-score"></span>';
+    const answerList = ex.images
+      ? '<div class="image-cloze-grid" id="'+ex.id+'-list"></div>'
+      : '<ul class="cloze-list" id="'+ex.id+'-list"></ul>';
+    exDiv.innerHTML = '<h3><span class="exercise-num">'+ex.tag+'</span>'+ex.title+'</h3><p class="instructions">'+ex.instr+'</p>' + (ex.bank ? '<div class="word-bank" id="'+ex.id+'-bank"></div>' : '') + answerList + '<div class="exercise-controls">'+controls+'</div>';
+  } else if(ex.type==='match'){
+    controls = '<button class="btn secondary" onclick="resetMatch(\''+ex.id+'\')">Reset</button> <span class="score" id="'+ex.id+'-score"></span>';
+    exDiv.innerHTML = '<h3><span class="exercise-num">'+ex.tag+'</span>'+ex.title+'</h3><p class="instructions">'+ex.instr+'</p><div class="match-grid"><div class="match-col"><h4>'+ex.leftLabel+'</h4><div id="'+ex.id+'-left"></div></div><div class="match-col"><h4>'+ex.rightLabel+'</h4><div id="'+ex.id+'-right"></div></div></div><div class="exercise-controls">'+controls+'</div>';
+  } else if(ex.type==='choice'){
+    controls = '<button class="btn" onclick="checkChoice(\''+ex.id+'\')">Check answers</button> <button class="btn secondary" onclick="revealChoice(\''+ex.id+'\')">Reveal answers</button> <button class="btn secondary" onclick="resetChoice(\''+ex.id+'\')">Reset</button> <span class="score" id="'+ex.id+'-score"></span>';
+    exDiv.innerHTML = '<h3><span class="exercise-num">'+ex.tag+'</span>'+ex.title+'</h3><p class="instructions">'+ex.instr+'</p><ul class="choice-list" id="'+ex.id+'-list"></ul><div class="exercise-controls">'+controls+'</div>';
+  } else if(ex.type==='order'){
+    controls = '<button class="btn" onclick="checkOrder(\''+ex.id+'\')">Check answers</button> <button class="btn secondary" onclick="revealOrder(\''+ex.id+'\')">Reveal answers</button> <button class="btn secondary" onclick="resetOrder(\''+ex.id+'\')">Reset</button> <span class="score" id="'+ex.id+'-score"></span>';
+    exDiv.innerHTML = '<h3><span class="exercise-num">'+ex.tag+'</span>'+ex.title+'</h3><p class="instructions">'+ex.instr+'</p><ul class="order-list" id="'+ex.id+'-list"></ul><div class="exercise-controls">'+controls+'</div>';
+  } else if(ex.type==='drag'){
+    controls = '<button class="btn" onclick="checkDrag(\''+ex.id+'\')">Check answers</button> <button class="btn secondary" onclick="revealDrag(\''+ex.id+'\')">Reveal answers</button> <button class="btn secondary" onclick="resetDrag(\''+ex.id+'\')">Reset</button> <span class="score" id="'+ex.id+'-score"></span>';
+    exDiv.innerHTML = '<h3><span class="exercise-num">'+ex.tag+'</span>'+ex.title+'</h3><p class="instructions">'+ex.instr+'</p>' +
+      '<p class="drag-hint">Drag a sentence into the box below, or tap it on a touch screen. Drag a sentence out of the box to remove it.</p>' +
+      '<div class="chip-pool" id="'+ex.id+'-pool"></div>' +
+      '<div class="drop-zone" id="'+ex.id+'-zone"></div>' +
+      '<div class="exercise-controls">'+controls+'</div>';
+  } else if(ex.type==='sort'){
+    controls = '<button class="btn" onclick="checkSort(\''+ex.id+'\')">Check answers</button> <button class="btn secondary" onclick="revealSort(\''+ex.id+'\')">Reveal answers</button> <button class="btn secondary" onclick="resetSort(\''+ex.id+'\')">Reset</button> <span class="score" id="'+ex.id+'-score"></span>';
+    exDiv.innerHTML = '<h3><span class="exercise-num">'+ex.tag+'</span>'+ex.title+'</h3><p class="instructions">'+ex.instr+'</p><ul class="sort-list" id="'+ex.id+'-list"></ul><div class="exercise-controls">'+controls+'</div>';
+  } else if(ex.type==='open'){
+    controls = '<button class="btn secondary" onclick="toggleOpenModels(\''+ex.id+'\')">Show / hide sample answers</button> <button class="btn secondary" onclick="resetOpen(\''+ex.id+'\')">Reset</button> <span class="score" id="'+ex.id+'-score"></span>';
+    exDiv.innerHTML = '<h3><span class="exercise-num">'+ex.tag+'</span>'+ex.title+'</h3><p class="instructions">'+ex.instr+'</p><ul class="open-list" id="'+ex.id+'-list"></ul><div class="exercise-controls">'+controls+'</div>';
+  }
+  return exDiv;
+}
+
+function renderApp(){
+  const contentsGrid = document.getElementById('contents-grid');
+  const root = document.getElementById('topics-root');
+  const n = TOPICS.length;
+
+  TOPICS.forEach(t=>{
+    const card = document.createElement('a');
+    card.className='contents-card'; card.href='#'+t.id;
+    card.innerHTML = '<span class="contents-num">'+t.num+'</span><span class="contents-text">'+t.title+'</span>';
+    contentsGrid.appendChild(card);
+
+    const hero = document.createElement('div'); hero.className='unit-hero'; hero.id=t.id;
+    hero.innerHTML = '<div class="unit-hero-inner"><div class="unit-badge">'+t.num+'</div><div><p class="kicker">'+(t.kicker || ('Unit #'+t.num))+'</p><h1>'+t.title+'</h1></div></div>';
+    root.appendChild(hero);
+
+    const bodyWrap = document.createElement('div'); bodyWrap.className='wrap';
+    let over2you = null;
+
+    t.blocks.forEach(b=>{
+      const frag = document.createElement('div');
+      let html = '';
+      if(b.type==='p') html += '<p class="lede">'+b.html+'</p>';
+      else if(b.type==='vocab') html += '<div class="def-box">'+b.html+'</div>';
+      else if(b.type==='terms') html += '<ul class="term-list">'+b.items.map(x=>'<li>'+x+'</li>').join('')+'</ul>';
+      else if(b.type==='notes') html += '<div class="notes-box">'+b.items.map(x=>'<div>'+x+'</div>').join('')+'</div>';
+      else if(b.type==='bubbles') html += '<div class="bubble-group"><h4>'+(b.title||'')+'</h4><div class="bubble-field">'+b.items.map(x=>'<div class="bubble">'+x+'</div>').join('')+'</div></div>';
+      else if(b.type==='mistakes') html += '<div class="mistake-pair"><div class="mistake-col wrong"><h5>Common mistake</h5>'+b.wrong.map(x=>'<div>'+x+'</div>').join('')+'</div><div class="mistake-col right"><h5>Correct</h5>'+b.right.map(x=>'<div>'+x+'</div>').join('')+'</div></div>';
+      else if(b.type==='meme') html += '<div class="meme-placeholder"><span class="icon">&#128247;</span><span class="caption">'+b.caption+'</span></div>';
+      else if(b.type==='illustration') html += '<figure class="illustration-card">'+b.svg+'<figcaption>'+b.caption+'</figcaption></figure>';
+      else if(b.type==='image') html += '<figure class="illustration-card"><img src="'+b.src+'" alt="'+(b.alt||'')+'" loading="lazy"><figcaption>'+(b.caption||'')+'</figcaption></figure>';
+      else if(b.type==='reading') html += '<div class="reading-card"><h4>'+b.title+'</h4><div class="reading-text">'+b.html+'</div></div>';
+      else if(b.type==='video') html += videoCardHtml(b);
+      else if(b.type==='audio') html += '<div class="audio-card"><h3>'+b.title+'</h3><p class="instructions">'+b.instr+'</p><div class="audio-player"><audio controls preload="metadata" src="'+b.src+'">Your browser does not support the audio element. <a href="'+b.src+'">Download the dialogue</a>.</audio>'+(b.meta?'<span class="audio-meta">'+b.meta+'</span>':'')+'</div></div>';
+      else if(b.type==='over2you') over2you = b;
+      else if(b.type==='reftable') html += '<div style="overflow-x:auto"><table class="ref-table '+(b.cls||'')+'"><thead><tr>'+b.headers.map(h=>'<th>'+h+'</th>').join('')+'</tr></thead><tbody>'+b.rows.map(r=>'<tr>'+r.map(c=>'<td>'+c+'</td>').join('')+'</tr>').join('')+'</tbody></table></div>';
+      frag.innerHTML = html;
+      if(frag.innerHTML !== '') bodyWrap.appendChild(frag);
+      if(b.exercises) b.exercises.forEach(ex=>bodyWrap.appendChild(renderExercise(ex)));
+    });
+
+    (t.exercises||[]).forEach(ex=>bodyWrap.appendChild(renderExercise(ex)));
+
+    if(over2you){
+      const otyDiv = document.createElement('div');
+      otyDiv.innerHTML = overToYouHtml(over2you);
+      bodyWrap.appendChild(otyDiv);
+    }
+
+    root.appendChild(bodyWrap);
+
+    const pagerWrap = document.createElement('div'); pagerWrap.className='wrap';
+    pagerWrap.innerHTML = '<div class="topic-pager">' +
+      '<span class="count">'+t.num+' / '+n+' &middot; <a href="#top">Contents</a></span>' +
+      '</div>';
+    root.appendChild(pagerWrap);
+  });
+
+  TOPICS.forEach(t=>{
+    const all = (t.exercises||[]).slice();
+    t.blocks.forEach(b=>{ if(b.exercises) b.exercises.forEach(ex=>all.push(ex)); });
+    all.forEach(ex=>{
+      if(ex.type==='cloze'){
+        EX[ex.id] = ex.answers;
+        if(ex.bank) buildBank(ex.id, ex.id+'-bank', ex.bank);
+        if(ex.images) buildImageCloze(ex.id, ex.id+'-list', ex.images);
+        else buildTokenCloze(ex.id, ex.id+'-list', ex.lines);
+      } else if(ex.type==='match'){
+        renderMatch(ex.id, ex.pairs);
+      } else if(ex.type==='choice'){
+        renderChoice(ex.id, ex.qs);
+      } else if(ex.type==='order'){
+        renderOrder(ex.id, ex.items);
+      } else if(ex.type==='drag'){
+        renderDrag(ex.id, ex.items, ex.poolOrder);
+      } else if(ex.type==='sort'){
+        renderSort(ex.id, ex.categories, ex.items);
+      } else if(ex.type==='open'){
+        renderOpen(ex.id, ex.qs);
+      }
+    });
+  });
+}
+renderApp();
+initNotes();
+if(window.location.hash){
+  const target = document.getElementById(window.location.hash.slice(1));
+  if(target) target.scrollIntoView({behavior:'instant', block:'start'});
+}
+
+</script>
+
+</body></html>
